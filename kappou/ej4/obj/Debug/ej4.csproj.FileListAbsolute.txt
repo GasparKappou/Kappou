@@ -1,0 +1,8 @@
+C:\Users\Alumno\source\repos\kappou\ej4\bin\Debug\ej4.exe.config
+C:\Users\Alumno\source\repos\kappou\ej4\bin\Debug\ej4.exe
+C:\Users\Alumno\source\repos\kappou\ej4\bin\Debug\ej4.pdb
+C:\Users\Alumno\source\repos\kappou\ej4\obj\Debug\ej4.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\kappou\ej4\obj\Debug\ej4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\source\repos\kappou\ej4\obj\Debug\ej4.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\kappou\ej4\obj\Debug\ej4.exe
+C:\Users\Alumno\source\repos\kappou\ej4\obj\Debug\ej4.pdb
