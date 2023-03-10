@@ -8,10 +8,16 @@ namespace Ej05
 {
     internal class Program
     {
+        static int arreglaEsp(int monY)
+        {
+            monY++;
+            Console.SetCursorPosition(0, monY);
+            Console.WriteLine("║");
+            return monY;
+        }
         static void Main(string[] args)
         {
             Random rnd = new Random();
-            int cont = 0;
             int monx = rnd.Next(2, 21);
             int mony = rnd.Next(1, 10);
             ConsoleKeyInfo tecla;
@@ -35,16 +41,10 @@ namespace Ej05
             Console.CursorVisible = false;
             while (true)
             {
-                if (cont == 0)
-                {
-                    cont++;
-                    mony++;
-                    Console.SetCursorPosition(0, mony);
-                    Console.WriteLine("║");
-                }
                 tecla = Console.ReadKey();
                 if (tecla.Key == ConsoleKey.UpArrow)
                 {
+                    arreglaEsp(mony);
                     Console.SetCursorPosition(col, row);
                     Console.Write(" ");
                     if (row > 1)
@@ -54,6 +54,7 @@ namespace Ej05
                 }
                 if (tecla.Key == ConsoleKey.DownArrow)
                 {
+                    arreglaEsp(mony);
                     Console.SetCursorPosition(col, row);
                     Console.Write(" ");
                     if (row < 11)
@@ -63,6 +64,7 @@ namespace Ej05
                 }
                 if (tecla.Key == ConsoleKey.LeftArrow)
                 {
+                    arreglaEsp(mony);
                     Console.SetCursorPosition(col, row);
                     Console.Write(" ");
                     if (col > 2)
@@ -72,6 +74,7 @@ namespace Ej05
                 }
                 if (tecla.Key == ConsoleKey.RightArrow)
                 {
+                    arreglaEsp(mony);
                     Console.SetCursorPosition(col, row);
                     Console.Write(" ");
                     if (col < 22)
