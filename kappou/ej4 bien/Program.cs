@@ -11,10 +11,12 @@ namespace Ej05
         static void Main(string[] args)
         {
             Random rnd = new Random();
+            int cont = 0;
             int monx = rnd.Next(2, 21);
             int mony = rnd.Next(1, 10);
             ConsoleKeyInfo tecla;
             int col = 12, row = 6;
+            int score = 0;
             
             Console.SetCursorPosition(0, 0);
             Console.WriteLine("╔═══════════════════════╗");
@@ -23,7 +25,7 @@ namespace Ej05
                 Console.WriteLine("║                       ║");
             }
             Console.WriteLine("╚═══════════════════════╝");
-            Console.WriteLine("Puntuacion: ");
+            Console.WriteLine("Puntuacion: " + score);
             Console.SetCursorPosition(col, row);
             Console.Write("+");
 
@@ -33,6 +35,13 @@ namespace Ej05
             Console.CursorVisible = false;
             while (true)
             {
+                if (cont == 0)
+                {
+                    cont++;
+                    mony++;
+                    Console.SetCursorPosition(0, mony);
+                    Console.WriteLine("║");
+                }
                 tecla = Console.ReadKey();
                 if (tecla.Key == ConsoleKey.UpArrow)
                 {
@@ -70,8 +79,18 @@ namespace Ej05
                     Console.SetCursorPosition(col, row);
                     Console.Write("+");
                 }
+                
                 if (tecla.Key == ConsoleKey.Escape)
                     break;
+                if (col == monx && row == mony)
+                {
+                    Console.Beep();
+                    monx = 0;
+                    mony = 0;
+                    Console.SetCursorPosition(12, 13);
+                    score++;
+                    Console.WriteLine(score);
+                }
             }
             Console.CursorVisible = false;
         }
