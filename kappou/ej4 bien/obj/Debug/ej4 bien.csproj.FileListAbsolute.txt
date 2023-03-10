@@ -6,3 +6,11 @@ C:\Users\Alumno\source\repos\kappou\ej4 bien\obj\Debug\ej4 bien.csproj.Suggested
 C:\Users\Alumno\source\repos\kappou\ej4 bien\obj\Debug\ej4 bien.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\source\repos\kappou\ej4 bien\obj\Debug\ej4 bien.exe
 C:\Users\Alumno\source\repos\kappou\ej4 bien\obj\Debug\ej4 bien.pdb
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\bin\Debug\ej4 bien.exe.config
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\bin\Debug\ej4 bien.exe
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\bin\Debug\ej4 bien.pdb
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\obj\Debug\ej4 bien.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\obj\Debug\ej4 bien.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\obj\Debug\ej4 bien.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\obj\Debug\ej4 bien.exe
+C:\Users\Alumno\source\repos\Kappou\kappou\ej4 bien\obj\Debug\ej4 bien.pdb

@@ -10,17 +10,25 @@ namespace Ej05
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
+            int monx = rnd.Next(2, 21);
+            int mony = rnd.Next(1, 10);
             ConsoleKeyInfo tecla;
-            int row = 5, col = 10;
-            Console.WriteLine("#########################");
-            for(int i = 0; i < 11; i++)
+            int col = 12, row = 6;
+            
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("╔═══════════════════════╗");
+            for (int i = 0; i < 11; i++)
             {
-                Console.WriteLine("#                       #");
+                Console.WriteLine("║                       ║");
             }
-            Console.WriteLine("#########################");
-
+            Console.WriteLine("╚═══════════════════════╝");
+            Console.WriteLine("Puntuacion: ");
             Console.SetCursorPosition(col, row);
             Console.Write("+");
+
+            Console.SetCursorPosition(monx, mony);
+            Console.WriteLine("°");
 
             Console.CursorVisible = false;
             while (true)
@@ -48,7 +56,7 @@ namespace Ej05
                 {
                     Console.SetCursorPosition(col, row);
                     Console.Write(" ");
-                    if (col > 1)
+                    if (col > 2)
                         col--;
                     Console.SetCursorPosition(col, row);
                     Console.Write("+");
@@ -66,8 +74,6 @@ namespace Ej05
                     break;
             }
             Console.CursorVisible = false;
-
-
         }
     }
 }
