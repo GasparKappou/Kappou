@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Ej05
 {
@@ -25,6 +28,14 @@ namespace Ej05
             Random rnd = new Random();
             int monx = rnd.Next(2, 21);
             int mony = rnd.Next(1, 10);
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            //introduccion
+            Console.WriteLine("Tienes 10 segundos para conseguir la mayor puntuacion posible");
+            Console.WriteLine("Presiona cualquier tecla para continuar");
+            Console.ReadKey();
+            Console.Clear();
 
             //mapa
             Console.WriteLine("╔═══════════════════════╗");
@@ -40,7 +51,7 @@ namespace Ej05
             Console.CursorVisible = false;
 
             //juego
-            while (true)
+            while (stopwatch.Elapsed.TotalSeconds < 10)
             {
                 //monedas
                 if (cont == 0)
@@ -108,6 +119,10 @@ namespace Ej05
                 }
             }
             Console.CursorVisible = false;
+            Console.Clear();
+            Console.WriteLine("Puntaje final: " + score);
+            Thread.Sleep(3000);
+            Console.ReadKey();
         }
     }
 }
