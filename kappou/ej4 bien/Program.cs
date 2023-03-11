@@ -48,9 +48,10 @@ namespace Ej05
                     cont++;
                     monx = rnd.Next(2, 21);
                     mony = rnd.Next(1, 10);
-                    Console.SetCursorPosition(monx, mony);
-                    Console.WriteLine("°");
+                    
                 }
+                Console.SetCursorPosition(monx, mony);
+                Console.WriteLine("°");
                 tecla = Console.ReadKey();
                 if (tecla.Key == ConsoleKey.UpArrow)
                 {
