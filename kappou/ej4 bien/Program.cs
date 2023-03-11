@@ -17,14 +17,16 @@ namespace Ej05
         }
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            int monx = rnd.Next(2, 21);
-            int mony = rnd.Next(1, 10);
+            //variables
             ConsoleKeyInfo tecla;
             int col = 12, row = 6;
             int score = 0;
-            
-            Console.SetCursorPosition(0, 0);
+            int cont = 0;
+            Random rnd = new Random();
+            int monx = rnd.Next(2, 21);
+            int mony = rnd.Next(1, 10);
+
+            //mapa
             Console.WriteLine("╔═══════════════════════╗");
             for (int i = 0; i < 11; i++)
             {
@@ -35,12 +37,20 @@ namespace Ej05
             Console.SetCursorPosition(col, row);
             Console.Write("+");
 
-            Console.SetCursorPosition(monx, mony);
-            Console.WriteLine("°");
-
             Console.CursorVisible = false;
+
+            //juego
             while (true)
             {
+                //monedas
+                if (cont == 0)
+                {
+                    cont++;
+                    monx = rnd.Next(2, 21);
+                    mony = rnd.Next(1, 10);
+                    Console.SetCursorPosition(monx, mony);
+                    Console.WriteLine("°");
+                }
                 tecla = Console.ReadKey();
                 if (tecla.Key == ConsoleKey.UpArrow)
                 {
@@ -92,6 +102,7 @@ namespace Ej05
                     mony = 0;
                     Console.SetCursorPosition(12, 13);
                     score++;
+                    cont--;
                     Console.WriteLine(score);
                 }
             }
