@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej3", "ejercicios\ej3.cspro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej4 bien", "ej4 bien\ej4 bien.csproj", "{36BF9B8D-1D9E-495B-8176-BE62AD4F52A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juego AI", "Juego AI\Juego AI.csproj", "{8DA493D4-8563-4183-90BC-4B94ADC34704}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{36BF9B8D-1D9E-495B-8176-BE62AD4F52A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36BF9B8D-1D9E-495B-8176-BE62AD4F52A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36BF9B8D-1D9E-495B-8176-BE62AD4F52A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

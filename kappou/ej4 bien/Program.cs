@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -25,11 +26,12 @@ namespace Ej05
             int col = 12, row = 6;
             int score = 0;
             int cont = 0;
+            int once = 0;
             Random rnd = new Random();
             int monx = rnd.Next(2, 21);
             int mony = rnd.Next(1, 10);
             Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+            
 
             //introduccion
             Console.WriteLine("Tienes 10 segundos para conseguir la mayor puntuacion posible");
@@ -53,6 +55,10 @@ namespace Ej05
             //juego
             while (stopwatch.Elapsed.TotalSeconds < 10)
             {
+                if (once == 0) {
+                    once++;
+                    stopwatch.Start();
+                }
                 //monedas
                 if (cont == 0)
                 {
