@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej4 bien", "ej4 bien\ej4 bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juego AI", "Juego AI\Juego AI.csproj", "{8DA493D4-8563-4183-90BC-4B94ADC34704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Copito", "Copito\Copito.csproj", "{2A1AB180-764A-4181-956C-9EFEE0C2F471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA493D4-8563-4183-90BC-4B94ADC34704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1AB180-764A-4181-956C-9EFEE0C2F471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1AB180-764A-4181-956C-9EFEE0C2F471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1AB180-764A-4181-956C-9EFEE0C2F471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1AB180-764A-4181-956C-9EFEE0C2F471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
