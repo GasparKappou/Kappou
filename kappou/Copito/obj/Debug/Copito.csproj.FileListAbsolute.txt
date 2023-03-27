@@ -6,3 +6,11 @@ C:\Users\alumno\Desktop\Kappou\Kappou\kappou\Copito\obj\Debug\Copito.csproj.Sugg
 C:\Users\alumno\Desktop\Kappou\Kappou\kappou\Copito\obj\Debug\Copito.csproj.CoreCompileInputs.cache
 C:\Users\alumno\Desktop\Kappou\Kappou\kappou\Copito\obj\Debug\Copito.exe
 C:\Users\alumno\Desktop\Kappou\Kappou\kappou\Copito\obj\Debug\Copito.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\bin\Debug\Copito.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\bin\Debug\Copito.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\bin\Debug\Copito.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\obj\Debug\Copito.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\obj\Debug\Copito.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\obj\Debug\Copito.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\obj\Debug\Copito.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\Copito\obj\Debug\Copito.pdb
