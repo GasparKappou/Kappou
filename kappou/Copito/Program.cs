@@ -17,12 +17,6 @@ namespace Nieve
             this.y = y;
         }
 
-        public void mostrar()
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write("*");
-        }
-
         public void bajar(int altura)
         {
             if (y < altura)
@@ -39,60 +33,52 @@ namespace Nieve
     {
         static void Main(string[] args)
         {
-            int ancho = 5;
-            int altura = 5;
-            int cantPart = 0;
+            int ancho = 20;
+            int altura = 10;
+            bool bajar;
+
             List<Copo> list = new List<Copo>();
             Random rand = new Random();
 
             DateTime hora = DateTime.Now;
-            //DateTime horaActual = DateTime.Now;
-            TimeSpan tiempoTrasncurrido;
 
-            bool bajar;
             Console.CursorVisible = false;
             while (true)
             {
+                int cantPart = 0;
                 DateTime horaActual = DateTime.Now;
-                tiempoTrasncurrido = horaActual - hora;
-                if (tiempoTrasncurrido.Milliseconds >= 500)
+                if ((horaActual - hora).Milliseconds >= 50)
                 {
                     list.Add(new Copo(rand.Next(ancho), 0));
                     hora = DateTime.Now;
                     foreach (Copo copoLista in list)
                     {
                         if(copoLista.y == altura)
-                        {
                             cantPart++;
-                        }
+                        
                         bajar = true;
                         foreach (Copo temp in list)
-                        {
                             if ((temp.x == copoLista.x) && (temp.y == copoLista.y + 1))
                             {
                                 bajar = false;
                                 break;
                             }  
-                        }
+                        
                         if (bajar)
-                        {
                             copoLista.bajar(altura);
-                            copoLista.mostrar();
-                        }
                     }
                     if (cantPart == ancho)
                     {
                         for(int i = list.Count-1; i >= 0; i--)
-                        {
                             if (list[i].y == altura)
-                            {
                                 list.RemoveAt(i);
-                            }
-                        }
                         Console.SetCursorPosition(0, altura);
-                        Console.Write("                                      ");
+                        for (int i = 0; i < ancho; i++)
+                        {
+                            Console.SetCursorPosition(i, altura);
+                            Console.Write(" ");
+                        }
                     }
-                    cantPart = 0;
                 }
             }
         }
