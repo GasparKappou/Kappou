@@ -1,0 +1,8 @@
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\bin\Debug\ejerciciosNumeros.exe.config
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\bin\Debug\ejerciciosNumeros.exe
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\bin\Debug\ejerciciosNumeros.pdb
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\obj\Debug\ejerciciosNumeros.csproj.AssemblyReference.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\obj\Debug\ejerciciosNumeros.csproj.SuggestedBindingRedirects.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\obj\Debug\ejerciciosNumeros.csproj.CoreCompileInputs.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\obj\Debug\ejerciciosNumeros.exe
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejerciciosNumeros\obj\Debug\ejerciciosNumeros.pdb

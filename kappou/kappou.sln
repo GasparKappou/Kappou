@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juego AI", "Juego AI\Juego 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Copito", "Copito\Copito.csproj", "{2A1AB180-764A-4181-956C-9EFEE0C2F471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercicio", "ejercicio\ejercicio.csproj", "{8E111E6C-F521-4C6E-BC9C-D4E186524C73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Personas", "ejercicio\Ejercicio Personas.csproj", "{8E111E6C-F521-4C6E-BC9C-D4E186524C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosNumeros", "ejerciciosNumeros\ejerciciosNumeros.csproj", "{7300EDA2-5557-4407-ADC7-C796D13D9175}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8E111E6C-F521-4C6E-BC9C-D4E186524C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E111E6C-F521-4C6E-BC9C-D4E186524C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E111E6C-F521-4C6E-BC9C-D4E186524C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7300EDA2-5557-4407-ADC7-C796D13D9175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7300EDA2-5557-4407-ADC7-C796D13D9175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7300EDA2-5557-4407-ADC7-C796D13D9175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7300EDA2-5557-4407-ADC7-C796D13D9175}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

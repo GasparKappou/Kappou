@@ -27,72 +27,77 @@ class Persona
     {
         return name + ", " + dni;
     }
+
+    static public string buscarDni(List<Persona> pers, string dni)
+    {
+        for (int i = 0; i < pers.Count; i++)
+        {
+            if (pers[i].dni == dni)
+                return pers[i].name;
+        }
+        return null;
+        
+    }
+
+    static public string borrarElemento(List<Persona> pers, string dni)
+    {
+        for (int i = 0; i < pers.Count; i++)
+        {
+            if (pers[i].dni == dni)
+            {
+                pers.RemoveAt(i);
+            }
+        }
+        return null;
+
+    }
+
 }
 
 internal class Program
 {
-    static List<Persona> personas = new List<Persona>();
-
-    static Persona buscarDni(string dni)
-    {
-        for (int i = 0; i < personas.Count; i++)
-        {
-            if (personas[i].dni == dni)
-                return personas[i];
-        }
-        return null;
-    }
+    static List<Persona> listaPersonas = new List<Persona>();
 
     static void Main(string[] args)
     {
-        Persona persona1;
-        /*
-        persona1 == AB ("pablo", 10)
-        list == [0] => FF("sergio", 14)
-                [1] => AB("pablo", 10)
         
-
+        listaPersonas.Add(new Persona("Sergio", "aj1234"));
+        listaPersonas.Add(new Persona("Pablo", "aj2345"));
+        listaPersonas.Add(new Persona("Florencia", "uj3456"));
         
-        for (int i = 0; i < personas.Count; i++)
-        {
-            Console.WriteLine(personas[i].dni);
-        }
-        Console.ReadLine();
-        */
-        personas.Add(new Persona("Sergio", "aj1234"));
-        personas.Add(new Persona("Pablo", "aj2345"));
-        personas.Add(new Persona("Florencia", "uj3456"));
+        
 
         string dni;
-
+        
         Console.Write("Ingrese un dni para buscar: ");
         dni = Console.ReadLine();
-        Persona personaBuscada = buscarDni(dni);
+        string personaBuscada = Persona.buscarDni(listaPersonas, dni);
         if (personaBuscada != null)
         {
-            Console.WriteLine("Se encontro");
-            Console.WriteLine(personaBuscada.name);
+            Console.WriteLine("Se encontro, presione una tecla para continuar");
+            Console.WriteLine(personaBuscada);
             Console.ReadKey();
+            Console.Clear();
         }
         else
         {
-            Console.WriteLine("No se encontro");
+            Console.WriteLine("No se encontro, presione una tecla para continuar");
             Console.ReadKey();
+            Console.Clear();
         }
-
+        int cantPers = listaPersonas.Count; 
         Console.Write("Ingrese un dni a buscar para luego borrar: ");
         dni = Console.ReadLine();
-        persona1 = buscarDni(dni);
-        if (persona1 != null)
+        Persona.borrarElemento(listaPersonas, dni);
+        
+        if (cantPers < listaPersonas.Count)
         {
-            personas.Remove(persona1);
+            Console.WriteLine("Se borro, estos son los usuarios restantes");
         }
-
-        for (int i = 0; i < personas.Count; i++)
+        for (int i = 0; i < listaPersonas.Count; i++)
         {
-            Console.WriteLine(personas[i].mostrarTodo());
+            Console.WriteLine(listaPersonas[i].mostrarTodo());
         }
         Console.ReadKey();
-        
     }
 }
