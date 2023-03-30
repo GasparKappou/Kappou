@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DA493D4-8563-4183-90BC-4B94ADC34704}</ProjectGuid>
+    <ProjectGuid>{8E111E6C-F521-4C6E-BC9C-D4E186524C73}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Juego_AI</RootNamespace>
-    <AssemblyName>Juego AI</AssemblyName>
+    <RootNamespace>ejercicio</RootNamespace>
+    <AssemblyName>ejercicio</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
