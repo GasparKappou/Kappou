@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\bin\Debug\ejercicios.exe.config
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\bin\Debug\ejercicios.exe
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\bin\Debug\ejercicios.pdb
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ejercicios.exe
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ejercicios.pdb
