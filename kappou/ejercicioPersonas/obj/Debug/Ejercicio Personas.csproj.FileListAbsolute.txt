@@ -1,0 +1,24 @@
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe.config
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.pdb
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.AssemblyReference.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.SuggestedBindingRedirects.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.CoreCompileInputs.cache
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.exe
+C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.pdb
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe.config
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.pdb
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.exe
+C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\bin\Debug\ejercicio.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\obj\Debug\Ejercicio Personas.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\obj\Debug\ejercicio.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicio\obj\Debug\ejercicio.pdb

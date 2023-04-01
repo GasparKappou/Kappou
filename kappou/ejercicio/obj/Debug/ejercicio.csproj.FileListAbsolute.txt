@@ -1,8 +1,0 @@
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe.config
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.exe
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\bin\Debug\ejercicio.pdb
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.csproj.AssemblyReference.cache
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.csproj.SuggestedBindingRedirects.cache
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.csproj.CoreCompileInputs.cache
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.exe
-C:\Users\GOSTE\Desktop\Kappou\Kappou\kappou\ejercicio\obj\Debug\ejercicio.pdb
