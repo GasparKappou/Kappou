@@ -154,39 +154,6 @@ internal class Program
                     Environment.Exit(0);
                     break;
             }
-
-            /*string dni;
-
-            Console.Write("Ingrese un dni para buscar: ");
-            dni = Console.ReadLine();
-            string personaBuscada = Persona.buscarDni(listaPersonas, dni);
-            if (personaBuscada != null)
-            {
-                Console.WriteLine("Se encontro, presione una tecla para continuar");
-                Console.WriteLine(personaBuscada);
-                Console.ReadKey();
-                Console.Clear();
-            }
-            else
-            {
-                Console.WriteLine("No se encontro, presione una tecla para continuar");
-                Console.ReadKey();
-                Console.Clear();
-            }
-            int cantPers = listaPersonas.Count;
-            Console.Write("Ingrese un dni a buscar para luego borrar: ");
-            dni = Console.ReadLine();
-            Persona.borrarElemento(listaPersonas, dni);
-
-            if (cantPers < listaPersonas.Count)
-            {
-                Console.WriteLine("Se borro, estos son los usuarios restantes");
-            }
-            for (int i = 0; i < listaPersonas.Count; i++)
-            {
-                Console.WriteLine(listaPersonas[i].mostrarTodo());
-            }
-            Console.ReadKey();*/
         }
     }
 }
