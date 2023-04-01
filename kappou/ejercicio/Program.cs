@@ -23,17 +23,30 @@ class Persona
     //Mas de un constructor = sobrecarga de constructores
 
     //Metodo para mostrar los datos del objeto
-    public string mostrarTodo()
+    static public string mostrarTodo(List<Persona> listaPersonas)
     {
-        return name + ", " + dni;
+        for (int i = 0; i < listaPersonas.Count; i++)
+        {
+            Console.WriteLine(listaPersonas[i].name + ", " + listaPersonas[i].dni);
+        }
+        return null;
     }
 
-    static public string buscarDni(List<Persona> pers, string dni)
+    static public string buscarDni(List<Persona> pers, string dni, string modif)
     {
         for (int i = 0; i < pers.Count; i++)
         {
             if (pers[i].dni == dni)
-                return pers[i].name;
+            {
+                if (modif == "nombre")
+                {
+                    return pers[i].name = Console.ReadLine();
+                }
+                else if (modif == "dni")
+                {
+                    return pers[i].dni = Console.ReadLine();
+                }
+            }
         }
         return null;
         
@@ -49,7 +62,6 @@ class Persona
             }
         }
         return null;
-
     }
 
 }
@@ -73,10 +85,9 @@ internal class Program
             int opcion = Convert.ToInt32(Console.ReadLine());
             if (opcion < 1 || opcion > 5)
             {
-                Console.WriteLine("Cualquier cosa pibe, andate a usar otro menu");
-                Environment.Exit(0);
+                Console.WriteLine("Cualquier cosa pibe, pusiste cualquier numero.");
             }
-            
+
             switch (opcion)
             {
                 case 1:
@@ -97,7 +108,7 @@ internal class Program
                     break;
                 case 2:
                     Console.Clear();
-                    if(listaPersonas.Count == 0)
+                    if (listaPersonas.Count == 0)
                     {
                         Console.WriteLine("No hay personas para modificar");
                         Console.ReadKey();
@@ -107,35 +118,10 @@ internal class Program
                     Console.Write("Ingrese el dni de la persona a modificar: ");
                     string confirma = Console.ReadLine();
 
-                    Console.WriteLine("Ingrese que quiere modificar, dni o nombre: ");
+                    Console.WriteLine("Ingrese que quiere modificar, dni o nombre y luego el nuevo valor: ");
                     string modif = Console.ReadLine().ToLower();
-
-
-                    for (int i = 0; i < 5; i++)
-                    {
-                        if(listaPersonas[i].dni == confirma)
-                        {
-                            if(modif == "nombre")
-                            {
-                                Console.Write("Ingrese el nuevo nombre: ");
-                                listaPersonas[i].name = Console.ReadLine();
-                                break;
-                            }
-                            else if(modif == "dni")
-                            {
-                                Console.Write("Ingrese el nuevo dni: ");
-                                listaPersonas[i].dni = Console.ReadLine();
-                                break;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Cualquier cosa pusiste.");
-                                break;
-                            }
-                        }
-                        Console.WriteLine("No se encontró.");
-                    }
-
+                    
+                    Persona.buscarDni(listaPersonas, confirma, modif);
                     break;
                 case 3:
                     Console.Clear();
@@ -149,20 +135,19 @@ internal class Program
                     Console.Write("Ingrese el dni de la persona a eliminar: ");
                     string elimina = Console.ReadLine();
 
-                    for (int i = 0; i < listaPersonas.Count; i++)
-                        if (listaPersonas[i].dni == elimina)
-                        {
-                            listaPersonas.RemoveAt(i);
-                            break;
-                        }
+                    Persona.borrarElemento(listaPersonas, elimina);
                     
                     break;
                 case 4:
                     Console.Clear();
-                    for(int i = 0; i < listaPersonas.Count; i++)
+                    if (listaPersonas.Count == 0)
                     {
-                        Console.WriteLine(listaPersonas[i].name + " " + listaPersonas[i].dni);
+                        Console.WriteLine("No hay personas para mostrar");
+                        Console.ReadKey();
+                        break;
                     }
+                    Persona.mostrarTodo(listaPersonas);
+                    
                     Console.ReadLine();
                     break;
                 case 5:
