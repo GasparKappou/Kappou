@@ -81,8 +81,16 @@ internal class Program
             Console.WriteLine("3 Eliminar");
             Console.WriteLine("4 Listar");
             Console.WriteLine("5 Salir");
+            int opcion = 0;
+            try
+            {
+                opcion = Convert.ToInt32(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Cualquier cosa pibe, pusiste cualquier numero.");
+            }
 
-            int opcion = Convert.ToInt32(Console.ReadLine());
             if (opcion < 1 || opcion > 5)
             {
                 Console.WriteLine("Cualquier cosa pibe, pusiste cualquier numero.");

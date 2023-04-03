@@ -6,3 +6,11 @@ C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.Sug
 C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ejercicios.exe
 C:\Users\Alumno\Desktop\Kappou\Kappou\kappou\ejercicios\obj\Debug\ejercicios.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\bin\Debug\ejercicios.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\bin\Debug\ejercicios.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\bin\Debug\ejercicios.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\obj\Debug\ej3.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\obj\Debug\ejercicios.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicios\obj\Debug\ejercicios.pdb
