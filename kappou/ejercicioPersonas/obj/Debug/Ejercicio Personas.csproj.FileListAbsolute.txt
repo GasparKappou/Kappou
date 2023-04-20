@@ -30,3 +30,11 @@ C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioPersonas\obj\Deb
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioPersonas\obj\Debug\Ejercicio Personas.csproj.CoreCompileInputs.cache
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioPersonas\obj\Debug\ejercicio.exe
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioPersonas\obj\Debug\ejercicio.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\bin\Debug\ejercicio.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\bin\Debug\ejercicio.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\bin\Debug\ejercicio.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\obj\Debug\Ejercicio Personas.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\obj\Debug\Ejercicio Personas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\obj\Debug\Ejercicio Personas.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\obj\Debug\ejercicio.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioPersonas\obj\Debug\ejercicio.pdb

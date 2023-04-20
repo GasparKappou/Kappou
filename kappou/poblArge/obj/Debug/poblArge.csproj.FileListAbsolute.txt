@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\bin\Debug\poblArge.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\bin\Debug\poblArge.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\bin\Debug\poblArge.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.pdb
