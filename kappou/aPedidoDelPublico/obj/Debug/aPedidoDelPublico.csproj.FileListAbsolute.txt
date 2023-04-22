@@ -1,0 +1,8 @@
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\bin\Debug\aPedidoDelPublico.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\bin\Debug\aPedidoDelPublico.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\bin\Debug\aPedidoDelPublico.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\obj\Debug\aPedidoDelPublico.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\obj\Debug\aPedidoDelPublico.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\obj\Debug\aPedidoDelPublico.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\obj\Debug\aPedidoDelPublico.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\aPedidoDelPublico\obj\Debug\aPedidoDelPublico.pdb

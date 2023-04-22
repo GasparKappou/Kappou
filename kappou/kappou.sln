@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Personas", "ejerc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poblArge", "poblArge\poblArge.csproj", "{37FC8FB1-2D49-4377-875F-48CDA9D46DC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aPedidoDelPublico", "aPedidoDelPublico\aPedidoDelPublico.csproj", "{C5CA2218-7C84-4A7F-9BEE-0F1F42646352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{37FC8FB1-2D49-4377-875F-48CDA9D46DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FC8FB1-2D49-4377-875F-48CDA9D46DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FC8FB1-2D49-4377-875F-48CDA9D46DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CA2218-7C84-4A7F-9BEE-0F1F42646352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CA2218-7C84-4A7F-9BEE-0F1F42646352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CA2218-7C84-4A7F-9BEE-0F1F42646352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CA2218-7C84-4A7F-9BEE-0F1F42646352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
