@@ -1,0 +1,8 @@
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\bin\Debug\bibioteca.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\bin\Debug\bibioteca.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\bin\Debug\bibioteca.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\obj\Debug\bibioteca.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\obj\Debug\bibioteca.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\obj\Debug\bibioteca.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\obj\Debug\bibioteca.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\bibioteca\obj\Debug\bibioteca.pdb
