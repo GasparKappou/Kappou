@@ -1,0 +1,8 @@
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\bin\Debug\pobl3Paises.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\bin\Debug\pobl3Paises.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\bin\Debug\pobl3Paises.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\obj\Debug\pobl3Paises.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\obj\Debug\pobl3Paises.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\obj\Debug\pobl3Paises.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\obj\Debug\pobl3Paises.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\pobl3Paises\obj\Debug\pobl3Paises.pdb

@@ -2,32 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Ej11
 {
+    class Pais
+    {
+        List<Persona> paises;
+
+        public Pais(List<Persona> personas)
+        {
+            this.paises = personas;
+        }
+    }
     class Persona
     {
         string nombre;
         string apellido;
 
-        public string Nombre
-        {
-            get
-            {
-                return nombre;
-            }
-        }
-
-        public string Apellido
-        {
-            get
-            {
-                return apellido;
-            }
-        }
         public Persona(string nombre, string apellido)
         {
             this.nombre = nombre;
@@ -37,7 +32,7 @@ namespace Ej11
 
     internal class Program
     {
-        static void mostrarPersonas(List<Persona> personas)
+        /*static void mostrarPersonas(List<Paises> paises)
         {
             Console.Clear();
             Console.WriteLine("Poblacion:");
@@ -46,17 +41,17 @@ namespace Ej11
                 Console.WriteLine(personas[i].Nombre + " " + personas[i].Apellido);
             }
         }
-        static void agregarPersonas(List<Persona> personas)
+        static void agregarPersonas(List<Paises> paises)
         {
-            string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar"};
-            string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou"};
+            string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar" };
+            string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou" };
             Random ran = new Random();
-            personas.Add(new Persona(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)]));
+            paises.Add(new Persona(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)]));
         }
-        static void matarPersonas(List<Persona> personas)
+        static void matarPersonas(List<Paises> paises)
         {
             personas.Remove(personas[0]);
-        }
+        }*/
         static void Main(string[] args)
         {
             //personas.Add(new Persona("" , ""));
@@ -66,10 +61,19 @@ namespace Ej11
 
             // Buscar una persona en la lista
             //Persona personaEncontrada = personas.Find(p => p.email == "juanperez@gmail.com");
+            List<Pais> paises = new List<Pais>();
+            List<Persona> arg = new List<Persona>();
+            List<Persona> par = new List<Persona>();
+            List<Persona> bra = new List<Persona>();
 
-            List<Persona> personas = new List<Persona>();
+            paises.Add(new Pais(arg));
+            paises.Add(new Pais(par));
+            paises.Add(new Pais(bra));
 
-            int cant10 = 1;
+            Console.WriteLine(paises[3]);
+            Console.ReadKey();
+
+            /*int cant10 = 1;
             int cant30 = 2;
             DateTime hora = DateTime.Now;
 
@@ -80,27 +84,27 @@ namespace Ej11
                 TimeSpan lapso = horaActual - hora;
 
 
-                if (lapso.Seconds == 10)
+                if (lapso.Seconds == 1)
                 {
                     hora = DateTime.Now;
                     cant10++;
                     //Console.WriteLine("pasaron 10 seg");
-                    mostrarPersonas(personas);
+                    mostrarPersonas(paises);
                 }
                 if (cant10 % 4 == 0)
                 {
                     cant10 = 1;
                     cant30++;
-                    agregarPersonas(personas);
+                    agregarPersonas(paises);
                 }
                 if (cant30 % 4 == 0)
                 {
                     cant10 = 1;
                     cant30 = 1;
-                    matarPersonas(personas);
+                    matarPersonas(paises);
                 }
                 Console.SetCursorPosition(0, 0);
-            }
+            }*/
         }
     }
 }
