@@ -11,11 +11,11 @@ namespace Ej11
 {
     class Pais
     {
-        List<Persona> paises;
+        List<Persona> personas;
 
         public Pais(List<Persona> personas)
         {
-            this.paises = personas;
+            this.personas = personas;
         }
     }
     class Persona
@@ -40,14 +40,14 @@ namespace Ej11
             {
                 Console.WriteLine(personas[i].Nombre + " " + personas[i].Apellido);
             }
-        }
-        static void agregarPersonas(List<Paises> paises)
+        }*/
+        static void agregarPersonas(List<Pais> paises)
         {
             string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar" };
             string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou" };
             Random ran = new Random();
-            paises.Add(new Persona(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)]));
-        }
+            paises.Add(new Pais(new List<Persona>(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)])));
+        }/*
         static void matarPersonas(List<Paises> paises)
         {
             personas.Remove(personas[0]);
@@ -63,14 +63,14 @@ namespace Ej11
             //Persona personaEncontrada = personas.Find(p => p.email == "juanperez@gmail.com");
             List<Pais> paises = new List<Pais>();
             List<Persona> arg = new List<Persona>();
-            List<Persona> par = new List<Persona>();
             List<Persona> bra = new List<Persona>();
+            List<Persona> par = new List<Persona>();
 
             paises.Add(new Pais(arg));
-            paises.Add(new Pais(par));
             paises.Add(new Pais(bra));
+            paises.Add(new Pais(par));
 
-            Console.WriteLine(paises[3]);
+            agregarPersonas(paises);
             Console.ReadKey();
 
             /*int cant10 = 1;
