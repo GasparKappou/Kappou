@@ -12,8 +12,6 @@ namespace Ej11
     {
         string nombre;
         string apellido;
-        int edad;
-        public string email;
 
         public string Nombre
         {
@@ -30,59 +28,86 @@ namespace Ej11
                 return apellido;
             }
         }
-        public int Edad
-        {
-            get
-            {
-                return edad;
-            }
-        }
-        public string Email
-        {
-            get
-            {
-                return email;
-            }
-        }
-
-
-        public Persona(string nombre, string apellido, int edad, string email)
+        public Persona(string nombre, string apellido)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-            this.edad = edad;
-            this.email = email;
         }
     }
 
     internal class Program
     {
+        static void mostrarPersonas(List<Persona> personas)
+        {
+            Console.Clear();
+            Console.WriteLine("Poblacion:");
+            for (int i = 0; i < personas.Count; i++)
+            {
+                Console.WriteLine(personas[i].Nombre + " " + personas[i].Apellido);
+            }
+        }
+        static void agregarPersonas(List<Persona> personas)
+        {
+            string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar"};
+            string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou"};
+            Random ran = new Random();
+            personas.Add(new Persona(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)]));
+        }
+        static void matarPersonas(List<Persona> personas)
+        {
+            personas.Remove(personas[0]);
+        }
         static void Main(string[] args)
         {
-            List<Persona> personas = new List<Persona>();
-
-            DateTime hora = DateTime.Now;
-
-            personas.Add(new Persona("" , "" , 4 , ""));
+            //personas.Add(new Persona("" , ""));
 
             // Eliminar una persona de la lista
-            personas.Remove(personas.Find(p => p.Nombre == "María" && p.Apellido == "García"));
+            //personas.Remove(personas.Find(p => p.Nombre == "María" && p.Apellido == "García"));
 
             // Buscar una persona en la lista
-            Persona personaEncontrada = personas.Find(p => p.email == "juanperez@gmail.com");
+            //Persona personaEncontrada = personas.Find(p => p.email == "juanperez@gmail.com");
+
+            List<Persona> personas = new List<Persona>();
+
+            int cant10 = 1;
+            int cant30 = 2;
+            DateTime hora = DateTime.Now;
+
             while (true)
             {
                 DateTime horaActual = DateTime.Now;
-                TimeSpan timeSpan = hora - horaActual;
 
-                if (timeSpan.Seconds % 30 == 0)
+                TimeSpan lapso = horaActual - hora;
+
+
+                if (lapso.Seconds == 1)
                 {
-
+                    hora = DateTime.Now;
+                    cant10++;
+                    //Console.WriteLine("pasaron 10 seg");
+                    mostrarPersonas(personas);
                 }
-                if (timeSpan.Seconds % 60 == 0)
+                if (cant10 % 4 == 0)
                 {
-
+                    cant10 = 1;
+                    cant30++;
+                    agregarPersonas(personas);
                 }
+                if (cant30 % 4 == 0)
+                {
+                    cant10 = 1;
+                    cant30 = 1;
+                    matarPersonas(personas);
+                }
+                Console.SetCursorPosition(0, 0);
+            }
+            
+            string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar" };
+            string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou" };
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine(nombres[i] + " " + apellidos[i]);
             }
             Console.ReadKey();
         }

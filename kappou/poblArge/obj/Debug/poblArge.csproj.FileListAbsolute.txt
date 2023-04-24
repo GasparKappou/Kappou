@@ -6,3 +6,11 @@ C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.Suggest
 C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.exe
 C:\Users\Alumno\Desktop\Kappou\kappou\poblArge\obj\Debug\poblArge.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\bin\Debug\poblArge.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\bin\Debug\poblArge.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\bin\Debug\poblArge.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\obj\Debug\poblArge.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\obj\Debug\poblArge.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\poblArge\obj\Debug\poblArge.pdb
