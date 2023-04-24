@@ -80,7 +80,7 @@ namespace Ej11
                 TimeSpan lapso = horaActual - hora;
 
 
-                if (lapso.Seconds == 1)
+                if (lapso.Seconds == 10)
                 {
                     hora = DateTime.Now;
                     cant10++;
