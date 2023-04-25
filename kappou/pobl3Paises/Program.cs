@@ -1,28 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ej11
 {
-    class Pais
-    {
-        List<Persona> personas;
-
-        public Pais(List<Persona> personas)
-        {
-            this.personas = personas;
-        }
-    }
     class Persona
     {
         string nombre;
         string apellido;
 
+        public string Nombre
+        {
+            get
+            {
+                return nombre;
+            }
+        }
+
+        public string Apellido
+        {
+            get
+            {
+                return apellido;
+            }
+        }
         public Persona(string nombre, string apellido)
         {
             this.nombre = nombre;
@@ -32,26 +42,30 @@ namespace Ej11
 
     internal class Program
     {
-        /*static void mostrarPersonas(List<Paises> paises)
+        static void mostrarPersonas(List<Persona> personas, int index)
         {
-            Console.Clear();
-            Console.WriteLine("Poblacion:");
-            for (int i = 0; i < personas.Count; i++)
+            for (int persona = 0; persona < personas.Count; persona++)
             {
-                Console.WriteLine(personas[i].Nombre + " " + personas[i].Apellido);
+                Console.SetCursorPosition(index*30, persona+1);
+                Console.WriteLine(personas[persona].Nombre + " " + personas[persona].Apellido);
             }
-        }*/
-        static void agregarPersonas(List<Pais> paises)
+        }
+
+        static void agregarPersonas(List<Persona> pais)
         {
-            string[] nombres = { "Angie", "Tobias", "Sofia", "Gaspar" };
-            string[] apellidos = { "Ventura", "Coman", "Zabalza", "Kappou" };
+            string[] nombres = { "Angie ", "Tobias", "Sofia ", "Gaspar" };
+            string[] apellidos = { "Ventura", "Coman  ", "Zabalza", "Kappou " };
             Random ran = new Random();
-            paises.Add(new Pais(new List<Persona>(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)])));
-        }/*
-        static void matarPersonas(List<Paises> paises)
+            pais.Add(new Persona(nombres[ran.Next(0, 4)], apellidos[ran.Next(0, 4)]));
+        }
+
+        static void matarPersonas(List<Persona> personas)
         {
+            if (personas.Count == 0)
+                return;
             personas.Remove(personas[0]);
-        }*/
+        }
+
         static void Main(string[] args)
         {
             //personas.Add(new Persona("" , ""));
@@ -61,19 +75,15 @@ namespace Ej11
 
             // Buscar una persona en la lista
             //Persona personaEncontrada = personas.Find(p => p.email == "juanperez@gmail.com");
-            List<Pais> paises = new List<Pais>();
+            //List<Pais> paises = new List<Pais>();
+
+
             List<Persona> arg = new List<Persona>();
             List<Persona> bra = new List<Persona>();
             List<Persona> par = new List<Persona>();
-
-            paises.Add(new Pais(arg));
-            paises.Add(new Pais(bra));
-            paises.Add(new Pais(par));
-
-            agregarPersonas(paises);
-            Console.ReadKey();
-
-            /*int cant10 = 1;
+            List<Persona>[] paises = { arg, bra, par };
+            Random rn = new Random();
+            int cant10 = 1;
             int cant30 = 2;
             DateTime hora = DateTime.Now;
 
@@ -84,27 +94,37 @@ namespace Ej11
                 TimeSpan lapso = horaActual - hora;
 
 
-                if (lapso.Seconds == 1)
+                if (lapso.Milliseconds == 500)
                 {
+                    Console.Clear();
                     hora = DateTime.Now;
                     cant10++;
-                    //Console.WriteLine("pasaron 10 seg");
-                    mostrarPersonas(paises);
+                    Console.WriteLine("Pobl Arg: ");                    
+                    mostrarPersonas(paises[0], 0);
+                    Console.SetCursorPosition(30, 0);
+                    Console.WriteLine("Pobl Bra: ");
+                    mostrarPersonas(paises[1], 1);
+                    Console.SetCursorPosition(60, 0);
+                    Console.WriteLine("Pobl Par: ");
+                    mostrarPersonas(paises[2], 2);
                 }
                 if (cant10 % 4 == 0)
                 {
                     cant10 = 1;
                     cant30++;
-                    agregarPersonas(paises);
+                    int index = rn.Next(0, 3);
+                    agregarPersonas(paises[index]);
                 }
                 if (cant30 % 4 == 0)
                 {
                     cant10 = 1;
                     cant30 = 1;
-                    matarPersonas(paises);
+                    matarPersonas(paises[0]);
+                    matarPersonas(paises[1]);
+                    matarPersonas(paises[2]);
                 }
                 Console.SetCursorPosition(0, 0);
-            }*/
+            }
         }
     }
 }
