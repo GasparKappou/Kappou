@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\bin\Debug\pobl3PaisesPeroMuerenCada2Min.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\bin\Debug\pobl3PaisesPeroMuerenCada2Min.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\bin\Debug\pobl3PaisesPeroMuerenCada2Min.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\obj\Debug\pobl3PaisesPeroMuerenCada2Min.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\obj\Debug\pobl3PaisesPeroMuerenCada2Min.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\obj\Debug\pobl3PaisesPeroMuerenCada2Min.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\obj\Debug\pobl3PaisesPeroMuerenCada2Min.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\pobl3PaisesPeroMuerenCada2Min\obj\Debug\pobl3PaisesPeroMuerenCada2Min.pdb

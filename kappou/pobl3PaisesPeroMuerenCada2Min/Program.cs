@@ -46,7 +46,7 @@ namespace Ej11
         {
             for (int persona = 0; persona < personas.Count; persona++)
             {
-                Console.SetCursorPosition(index*30, persona+1);
+                Console.SetCursorPosition(index * 30, persona + 1);
                 Console.WriteLine(personas[persona].Nombre + " " + personas[persona].Apellido);
             }
         }
@@ -84,7 +84,7 @@ namespace Ej11
             List<Persona>[] paises = { arg, bra, par };
             Random rn = new Random();
             int cant10 = 1;
-            int cant30 = 2;
+            int cant120 = 5;
 
             DateTime hora = DateTime.Now;
 
@@ -105,7 +105,7 @@ namespace Ej11
                 {
                     Console.Clear();
                     hora = DateTime.Now;
-                    cant10++;    
+                    cant10++;
                     mostrarPersonas(paises[0], 0);
                     Console.SetCursorPosition(30, 0);
                     mostrarPersonas(paises[1], 1);
@@ -115,14 +115,14 @@ namespace Ej11
                 if (cant10 % 4 == 0)
                 {
                     cant10 = 1;
-                    cant30++;
+                    cant120++;
                     int index = rn.Next(0, 3);
                     agregarPersonas(paises[index]);
                 }
-                if (cant30 % 4 == 0)
+                if (cant120 % 17 == 0)
                 {
                     cant10 = 1;
-                    cant30 = 1;
+                    cant120 = 5;
                     matarPersonas(paises[0]);
                     matarPersonas(paises[1]);
                     matarPersonas(paises[2]);
