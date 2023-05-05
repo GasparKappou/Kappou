@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pobl3Paises", "pobl3Paises\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pobl3PaisesPeroMuerenCada2Min", "pobl3PaisesPeroMuerenCada2Min\pobl3PaisesPeroMuerenCada2Min.csproj", "{72553D05-3CB8-437D-B171-1D2E1F882658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio4.4", "Ejercicio4.1\Ejercicio4.4.csproj", "{28F3250B-D048-4A17-8EA5-D429ACE665EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{72553D05-3CB8-437D-B171-1D2E1F882658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72553D05-3CB8-437D-B171-1D2E1F882658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72553D05-3CB8-437D-B171-1D2E1F882658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F3250B-D048-4A17-8EA5-D429ACE665EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F3250B-D048-4A17-8EA5-D429ACE665EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F3250B-D048-4A17-8EA5-D429ACE665EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F3250B-D048-4A17-8EA5-D429ACE665EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
