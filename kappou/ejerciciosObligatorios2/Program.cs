@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
@@ -9,15 +10,21 @@ namespace ejerciciosObligatorios2
 {
     class Persona
     {
-        public string nombre = "";
+        public string nombre = "Default";
         public int edad = 0;
         public int dni;
         public char genero = 'h';
         public double peso = 0;
         public double altura = 0;
 
-        public Persona()
+        public Persona(int rnd)
         {
+            this.nombre = "Pablo";
+            this.edad = 47;
+            this.dni = rnd;
+            this.genero = 'h';
+            this.peso = 75;
+            this.altura = 1.75;
         }
         public Persona(string nombre, int edad, int dni, char genero)
         {
@@ -35,17 +42,42 @@ namespace ejerciciosObligatorios2
             this.peso = peso;
             this.altura  = altura;
         }
-        static public double calcularIMC(List<Persona> personas)
-        {
-
+        static public double calcularIMC(Persona persona)
+        {//kg/(altura^2  en m))
+            double IMC = persona.peso / (Math.Pow(persona.altura, 2));
+            if (IMC < 20)
+            {
+                return -1;
+            }
+            else if (IMC >= 20 && IMC <= 25)
+            {
+                return 0;
+            }
+            else if (IMC > 25)
+            {
+                return 1;
+            }
+            return 2;
         }
-        static public double mayorDeEdad(List<Persona> personas)
+        static public bool mayorDeEdad(Persona personas)
         {
-        
+            if (personas.edad < 18)
+            {
+                return false;
+            }
+            else if (personas.edad > 18)
+            {
+                return true;
+            }
+            return false;
         }
-        static public double comprobarGenero(List<Persona> personas)
+        static public char comprobarGenero(Persona persona)
         {
-
+            if (persona.genero != 'h' || persona.genero != 'H' || persona.genero != 'm' || persona.genero != 'M')
+            {
+                return 'h';
+            }
+            return persona.genero;
         }
         static public int generaDNI(Random rnd)
         {
@@ -72,7 +104,44 @@ namespace ejerciciosObligatorios2
 
             personas.Add(new Persona(nombre, edad, Persona.generaDNI(rnd), genero, peso, altura));
             personas.Add(new Persona(nombre, edad, Persona.generaDNI(rnd), genero));
-            personas.Add(new Persona());
+            personas.Add(new Persona(Persona.generaDNI(rnd)));
+            Console.Clear();
+            for (int i = 0; i < personas.Count; i++)
+            {
+                Console.WriteLine("---------------------------------------------------------------");
+                Console.WriteLine("Nombre: " + personas[i].nombre);
+                Console.WriteLine("edad: " + personas[i].edad);
+                Console.WriteLine("dni: " + personas[i].dni);
+                Console.WriteLine("genero: " + Persona.comprobarGenero(personas[i]));
+                Console.WriteLine("peso: " + personas[i].peso);
+                Console.WriteLine("altura: " + personas[i].altura);
+                double imc = Persona.calcularIMC(personas[i]);
+                if (imc == -1)
+                {
+                    Console.WriteLine("Debajo del promedio");
+                }
+                else if (imc == 0)
+                {
+                    Console.WriteLine("Promedio");
+                }
+                else if (imc == 1)
+                {
+                    Console.WriteLine("Arriba del promedio");
+                }
+                else if (imc == 2)
+                {
+                    Console.WriteLine("Llega otro valor");
+                }
+                if (Persona.mayorDeEdad(personas[i]))
+                {
+                    Console.WriteLine("Es mayor");
+                }
+                else
+                {
+                    Console.WriteLine("No es mayor");
+                }
+            }
+            Console.ReadKey();
         }   
     }
 }
