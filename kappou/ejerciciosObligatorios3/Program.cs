@@ -64,34 +64,40 @@ namespace ejerciciosObligatorios3
             return contraseña;
         }
 
-        static public bool contraFuerte(Password[] contraseñas, char[] upper, char[] lower)
+        static public bool contraFuerte(string contraseña, char[] upper, char[] lower)
         {
             char[] numeros = "0123456789".ToCharArray();
             int up = 0;
             int lo = 0;
             int nu = 0;
-            for (int i = 0; i < contraseñas.Length; i++)
+            char[] contraAct = contraseña.ToCharArray();
+            for (int Caracter = 0; Caracter < contraAct.Length; Caracter++)
             {
-                char[] contraAct = contraseñas[i].Contraseña.ToCharArray();
-                for (int j = 0; j < upper.Length; j++)
-                { 
-                    if (contraAct[i] == upper[j])
+
+                for (int Lugar = 0; Lugar < upper.Length; Lugar++)
+                {
+                    if (contraAct[Caracter] == upper[Lugar])
                     {
                         up++;
+                        break;
                     }
-                    else if (contraAct[i] == lower[j])
+                }
+                for (int Lugar = 0; Lugar < upper.Length; Lugar++)
+                {
+                    if (contraAct[Caracter] == lower[Lugar])
                     {
                         lo++;
+                        break;
                     }
                 }
-                for (int j = 0; j < numeros.Length; j++)
-                { 
-                    if (contraAct[i] == numeros[j])
+                for (int Lugar = 0; Lugar < numeros.Length; Lugar++)
+                {
+                    if (contraAct[Caracter] == numeros[Lugar])
                     {
                         nu++;
+                        break;
                     }
                 }
-                    
             }
             if (up > 2 && lo > 1 && nu > 5)
             {
@@ -121,10 +127,10 @@ namespace ejerciciosObligatorios3
                 for (int i = 0; i < cant; i++)
                 {
                     contraseñas[i] = new Password(longi, generarPassword(rnd, upper, lower, longi));
+                    fuerte[i] = contraFuerte(contraseñas[i].Contraseña, upper, lower);
                 }
                 for (int i = 0; i < cant; i++)
                 {
-                    fuerte[i] = contraFuerte(contraseñas, upper, lower);
                     Console.WriteLine(contraseñas[i].Contraseña + " " + fuerte[i]);
                 }
                 Console.Read();
