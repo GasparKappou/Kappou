@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\bin\Debug\ejerciciosObligatorios7.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\bin\Debug\ejerciciosObligatorios7.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\bin\Debug\ejerciciosObligatorios7.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\obj\Debug\ejerciciosObligatorios7.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\obj\Debug\ejerciciosObligatorios7.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\obj\Debug\ejerciciosObligatorios7.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\obj\Debug\ejerciciosObligatorios7.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios7\obj\Debug\ejerciciosObligatorios7.pdb
