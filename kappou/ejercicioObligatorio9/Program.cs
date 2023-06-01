@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Policy;
@@ -52,10 +53,11 @@ namespace ejercicioObligatorio9
         static void Main(string[] args)
         {
             //variables
-            int[] fil = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-            string[] col = { "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I" };
+            int[] fil = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            string[] col = { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
             string[] nombres = { "Gaspar", "Luis", "Angie", "Sofia", "Tobias", "Claudia" };
             string[] nomPelis = { "Pelicula1", "Pelicula2", "Pelicula3", "Pelicula4", "Pelicula5"};
+            
             List<Persona> personas = new List<Persona>();
             Random rnd = new Random();
             Pelicula peli = new Pelicula(nomPelis[rnd.Next(0, nomPelis.Length)], nombres[rnd.Next(0, nombres.Length)], rnd.Next(0, 3) + rnd.NextDouble(), rnd.Next(0, 18));
@@ -82,18 +84,27 @@ namespace ejercicioObligatorio9
             int columna = 0;
             foreach (Persona persona in personas)
             {
-                fila = rnd.Next(0, fil.Length);
-                columna = rnd.Next(0, col.Length);
-                fil[fila] = 0;
-                col[columna] = "Z";
-
+                bool volver = true;
+                while (volver)
+                {
+                    fila = rnd.Next(0, fil.Length);
+                    columna = rnd.Next(0, col.Length);
+                    if (fil[fila] != 0 && col[columna] != "Z")
+                    {
+                        break;
+                    }
+                }
+                
                 if (persona.edad > peli.edadMin && persona.dinero > cine.costEntr)
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(Convert.ToChar(col[columna])-64, fil[fila]);
+                    Console.WriteLine(fil[fila] + col[columna]);
                 }
+                fil[fila] = 0;
+                col[columna] = "Z";
             }
-
             Console.ReadKey();
-
         }
     }
 }
