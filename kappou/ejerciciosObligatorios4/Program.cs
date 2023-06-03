@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio4._4
+namespace ejerciciosObligatorios4
 {
     class Electrodomestico
     {
