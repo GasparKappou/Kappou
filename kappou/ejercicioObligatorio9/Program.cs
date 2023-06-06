@@ -119,7 +119,7 @@ namespace ejercicioObligatorio9
                     }
                 }
                 Console.SetCursorPosition(0, 10);
-                Console.WriteLine(asientosOcupados < cantAsientos ? "Nos quedamos con asientos libres" : "Se vendieron todas las entradas");
+                Console.WriteLine(asientosOcupados < cantAsientos ? "No se vendieron todas las entradas" : "Se vendieron todas las entradas");
 
                 Console.ReadKey();
             }
