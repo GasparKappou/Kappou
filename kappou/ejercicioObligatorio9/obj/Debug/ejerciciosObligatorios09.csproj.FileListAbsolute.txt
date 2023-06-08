@@ -6,3 +6,11 @@ C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioObligatorio9\obj
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejerciciosObligatorios09.csproj.CoreCompileInputs.cache
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejercicioObligatorio9.exe
 C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejercicioObligatorio9.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\bin\Debug\ejercicioObligatorio9.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\bin\Debug\ejercicioObligatorio9.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\bin\Debug\ejercicioObligatorio9.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejerciciosObligatorios09.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejerciciosObligatorios09.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejerciciosObligatorios09.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejercicioObligatorio9.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejercicioObligatorio9\obj\Debug\ejercicioObligatorio9.pdb

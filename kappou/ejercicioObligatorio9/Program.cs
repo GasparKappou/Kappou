@@ -108,12 +108,13 @@ namespace ejercicioObligatorio9
                 {
                     for (int i = 0; i < cantAsientos; i++)
                     {
-                        if (persona.edad > peli.edadMin && persona.dinero > cine.costEntr && asientos[i].usado == false)
+                        int asientoAleatorio = rnd.Next(0, asientos.Count);
+                        if (persona.edad > peli.edadMin && persona.dinero > cine.costEntr && asientos[asientoAleatorio].usado == false)
                         {
                             asientosOcupados++;
-                            Console.SetCursorPosition(asientos[i].y * 4, asientos[i].x);
-                            Console.WriteLine(" " + asientos[i].etiqueta + " ");
-                            asientos[i].usado = true;
+                            Console.SetCursorPosition(asientos[asientoAleatorio].y * 4, asientos[asientoAleatorio].x);
+                            Console.WriteLine(" " + asientos[asientoAleatorio].etiqueta + " ");
+                            asientos[asientoAleatorio].usado = true;
                             break;
                         }
                     }

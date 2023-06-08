@@ -131,7 +131,8 @@ namespace ejerciciosObligatorios10
                         Console.ReadKey();
                         break;
                     case 6:
-                        Baraja.CrearBaraja(baraja);
+                        baraja.Clear();
+                        baraja = Baraja.CrearBaraja(baraja);
                         break;
                 }
             }
