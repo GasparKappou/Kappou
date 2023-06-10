@@ -1,0 +1,8 @@
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\bin\Debug\ejerciciosObligatorios14.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\bin\Debug\ejerciciosObligatorios14.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\bin\Debug\ejerciciosObligatorios14.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\obj\Debug\ejerciciosObligatorios14.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\obj\Debug\ejerciciosObligatorios14.csproj.SuggestedBindingRedirects.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\obj\Debug\ejerciciosObligatorios14.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\obj\Debug\ejerciciosObligatorios14.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios14\obj\Debug\ejerciciosObligatorios14.pdb

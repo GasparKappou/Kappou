@@ -35,13 +35,9 @@ namespace ejerciciosObligatorios14
             this.precio = precio;
         }
 
-        public static void Calcular(List<Producto> productos)
+        public static int Calcular(int productos, Producto prod)
         {
-            int precioTot = 0;
-            for (int i = 0; i < productos.Count; i++)
-            {
-                precioTot += productos[i].precio;
-            }
+            return prod.precio * productos;
         }
     }
     class Perecedero : Producto
@@ -54,32 +50,62 @@ namespace ejerciciosObligatorios14
             this.precio = precio;
             this.diasCaducar = dias;
         }
-
-        public static void Calcular(List<Perecedero> pPerec)
+        public static double Calcular(List<Perecedero> prods, int productos)
         {
+            double precioProducto = 0;
+            for(int i = 0; i < productos; i++)
+            {
+                if (prods[i].diasCaducar == 1)
+                    precioProducto += prods[i].precio / 4;
+                else if (prods[i].diasCaducar == 2)
+                    precioProducto += prods[i].precio / 3;
+                else if (prods[i].diasCaducar == 3)
+                    precioProducto += prods[i].precio / 2;
+            }
 
+            return precioProducto;
         }
+
     }
-    class noPerecedero : Producto
+    class NoPerecedero : Producto
     {
         public int tipo;
 
-        public noPerecedero(string nom, int precio, int tipo) : base(nom, precio)
+        public NoPerecedero(string nom, int precio, int tipo) : base(nom, precio)
         {
             this.nom = nom;
             this.precio = precio;
             this.tipo = tipo;
         }
 
-        public static void Calcular(List<Perecedero> pNoPerec)
+        public static int Calcular(int productos, NoPerecedero prod)
         {
-
+            return prod.precio * productos;
         }
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            List<Producto> productos = new List<Producto>();
+            List<Perecedero> perecederos = new List<Perecedero>();
+            List<NoPerecedero> noPerecederos = new List<NoPerecedero>();
+            Random rnd = new Random();
+            int cantVende = 5;
+
+            for (int i = 0; i < 10; i++)
+            {
+                productos.Add(new Producto("Cepillo", 150));
+                perecederos.Add(new Perecedero("Tomate", 50, rnd.Next(1, 4)));
+                noPerecederos.Add(new NoPerecedero("Fideo", 250, rnd.Next(0, 6)));
+            }
+
+            Console.WriteLine("Vendiendo " + cantVende + " " + productos[0].nom + " se consiguen: " + Producto.Calcular(cantVende, productos[0]));
+            Console.WriteLine("Vendiendo " + cantVende + " " + perecederos[0].nom + " se consiguen: " + Perecedero.Calcular(perecederos, cantVende));
+            Console.WriteLine("Vendiendo " + cantVende + " " + noPerecederos[0].nom + " se consiguen: " + NoPerecedero.Calcular(cantVende, noPerecederos[0]));
+
+            Console.ReadKey();
+
         }
     }
 }
