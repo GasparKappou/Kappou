@@ -35,7 +35,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios01", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios03", "ejerciciosObligatorios03\ejerciciosObligatorios03.csproj", "{CEB0BE8B-D823-45DC-8DB7-21C255FBA560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios4", "ejerciciosObligatorios04\ejerciciosObligatorios4.csproj", "{28F3250B-D048-4A17-8EA5-D429ACE665EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios04", "ejerciciosObligatorios04\ejerciciosObligatorios04.csproj", "{28F3250B-D048-4A17-8EA5-D429ACE665EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios05", "ejerciciosObligatorios05\ejerciciosObligatorios05.csproj", "{661E08E3-1849-4598-92DD-01346A7B975B}"
 EndProject
