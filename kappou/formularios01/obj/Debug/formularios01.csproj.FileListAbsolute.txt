@@ -1,0 +1,11 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\bin\Debug\formularios01.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\bin\Debug\formularios01.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\bin\Debug\formularios01.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.Form1.resources
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.Properties.Resources.resources
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.pdb

@@ -1,0 +1,3 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.CoreCompileInputs.cache
