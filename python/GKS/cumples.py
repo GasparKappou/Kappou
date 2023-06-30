@@ -49,12 +49,12 @@ plt.show()
 lista_n = list(range(7, 77))
 chances_para_n = []
 for i in range(len(lista_n)):
-    chances_para_n.append(chances(lista_n[i], 23))
+    chances_para_n.append(chances(lista_n[i], 2))
 
-plt.plot(lista_n, chances_para_n, ".")
+plt.plot(lista_n, chances_para_n)
 plt.show()
 n = 100
 Nrep = 10000
 lista = fechas_cumples(n)
-print(chances(n, Nrep))
+print(chances_para_n)
 
