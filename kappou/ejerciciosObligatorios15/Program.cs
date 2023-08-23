@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,6 +36,32 @@ namespace ejerciciosObligatorios15
             this.col = col;
             this.fil = fil;
         }
+
+        public double precioTot(List<Bebida> bebidas)
+        {
+            double tot = 0;
+            tot += bebidas.Sum(b => b.precio);
+            return tot;
+        }
+        public double precioMarca(List<Bebida> bebidas)
+        {
+            string marcaQ = Console.ReadLine();
+            double tot = 0;
+            for (int i = 0; i < bebidas.Count(); i++)
+                if (bebidas[i].marca == marcaQ)
+                    tot += bebidas[i].precio;
+            return tot;
+        }
+        public double precioColumna(List<Bebida> bebidas)
+        {
+            string marcaQ = Console.ReadLine();
+            double tot = 0;
+            for (int i = 0; i < bebidas.Count(); i++)
+                if (bebidas[i].marca == marcaQ)
+                    tot += bebidas[i].precio;
+            return tot;
+        }
+        
     }
     internal class Program
     {
@@ -53,24 +80,32 @@ namespace ejerciciosObligatorios15
             double litros;
             bool promo;
             int id = 0;
+
             for (int i = 0; i < alma.col; i++)
             {
+                precio = rnd.Next(25, 101);
                 azucar = bools[rnd.Next(0, 2)];
                 promo = bools[rnd.Next(0, 2)];
                 if (!azucar)
                     donde = dondes[rnd.Next(0, dondes.Length)];
                 else if (azucar && promo)
-                {
-                    
-                }
+                    precio *= 0.9;
                 marca = marcas[rnd.Next(0, marcas.Length)];
                 litros = rnd.Next(0, 4) + rnd.NextDouble();
-                for (int j = 0; i < alma.fil; j++)
+                for (int j = 0; j < alma.fil; j++)
                 {
                     bebidas.Add(new Bebida(id, marca, azucar, precio, litros, donde));
                     id++;
                 }
             }
+            Console.WriteLine(alma.precioTot(bebidas));
+            Console.Write("Marcas disponibles: |");
+            for (int i = 0; i < marcas.Count(); i++)
+                Console.Write(marcas[i] + "|");
+            Console.WriteLine("");
+            Console.WriteLine(alma.precioMarca(bebidas));
+            Console.WriteLine(alma.precioColumna(bebidas));
+            Console.ReadKey();
         }
     }
 }

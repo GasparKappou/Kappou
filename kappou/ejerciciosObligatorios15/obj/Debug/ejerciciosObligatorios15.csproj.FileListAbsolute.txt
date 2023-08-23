@@ -1,3 +1,10 @@
 C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.AssemblyReference.cache
 C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.SuggestedBindingRedirects.cache
 C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.AssemblyReference.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.csproj.CoreCompileInputs.cache
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\bin\Debug\ejerciciosObligatorios15.exe.config
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\bin\Debug\ejerciciosObligatorios15.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\bin\Debug\ejerciciosObligatorios15.pdb
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.exe
+C:\Users\GASPAR\Desktop\Programacion 5°\Kappou\kappou\ejerciciosObligatorios15\obj\Debug\ejerciciosObligatorios15.pdb
