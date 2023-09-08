@@ -54,8 +54,8 @@ namespace ejerciciosObligatorios16
 			if (agenda.Exists(a => a.nombre == nom) && agenda.Count() <= 20)
 				Console.WriteLine("Nombre ya usado");
 			else if (!agenda.Exists(a => a.nombre == nom) && agenda.Count() <= 20)
-				Agenda.AddContact(agenda, rnd, nombres);
-			else if (agenda.Count == 20)
+                agenda.Add(new Contacto(nom, rnd.Next(1000, 99999)));
+            else if (agenda.Count == 20)
 				Console.WriteLine("No hay mas espacio");
 		}
 		//existeContacto(Conctacto c): indica si el contacto pasado existe o no.
@@ -128,8 +128,8 @@ namespace ejerciciosObligatorios16
 			{
 				Console.Clear();
 				Console.WriteLine("1. Agregar contacto\n2. Preguntar por contacto existente\n" +
-								"3. Mostrar contactos\n4. Buscar contacto\n" +
-								"5. Eliminar\n6. Agenda llena?\n7. Cuantos contactos me faltan?");
+								  "3. Mostrar contactos\n4. Buscar contacto\n" +
+								  "5. Eliminar\n6. Agenda llena?\n7. Cuantos contactos me faltan?");
 				int op = Convert.ToInt32(Console.ReadLine());
 				switch (op)
 				{
@@ -137,7 +137,7 @@ namespace ejerciciosObligatorios16
 						Agenda.AddContact(agenda, rnd, nombres);
 						break;
 					case 2:
-						Agenda.ExistContact(agenda);
+						Console.WriteLine(Agenda.ExistContact(agenda));
 						break;
 					case 3:
 						Agenda.ShowContact(agenda);
