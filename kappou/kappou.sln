@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproductorMP3", "E:\Reprod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios16", "ejerciciosObligatorios16\ejerciciosObligatorios16.csproj", "{D20D9623-F309-4C23-97A3-69FC64E568AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejerciciosObligatorios17", "ejerciciosObligatorios17\ejerciciosObligatorios17.csproj", "{30E7609C-3470-4A2C-854E-5BB310CD89A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{D20D9623-F309-4C23-97A3-69FC64E568AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20D9623-F309-4C23-97A3-69FC64E568AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20D9623-F309-4C23-97A3-69FC64E568AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E7609C-3470-4A2C-854E-5BB310CD89A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E7609C-3470-4A2C-854E-5BB310CD89A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E7609C-3470-4A2C-854E-5BB310CD89A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E7609C-3470-4A2C-854E-5BB310CD89A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
