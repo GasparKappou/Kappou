@@ -1,69 +1,97 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ejerciciosObligatorios17
 {
-	/*public enum PalosEsp { Espadas, Bastos, Copas, Oros }
+	public enum PalosEsp { Espadas, Bastos, Copas, Oros }
 	public enum PalosFra { Picas, Treboles, Diamantes, Corazones }
-
 	abstract class Baraja
 	{
 		public int cantCartas;
 		public int cantCartasPalo;
-
-
-
 	}
 
 	class Carta : Baraja
 	{
 		public int num;
+		public string fig = null;
+		public string palo;
+		PalosEsp paloEsp;
+		PalosFra paloFra;
 	}
 
 	class BarajaEsp : Carta
 	{
-		private bool ochoNueve;
-		PalosEsp palosEsp = new PalosEsp();
-		public BarajaEsp(bool ochoNueve, int num) : base()
+		public BarajaEsp(int i, string palo) : base()
 		{
-			if (!this.ochoNueve)
+			this.num = i;
+			this.palo = palo;
+			switch (num)
 			{
-				this.cantCartas = 40;
-				this.cantCartasPalo = 10;
+				case 1:
+					this.fig = "Ancho";
+					break;
+				case 10:
+					this.fig = "Sota";
+					break;
+				case 11:
+					this.fig = "Caballo";
+					break;
+				case 12:
+					this.fig = "Rey";
+					break;
+				default:
+					this.fig = Convert.ToString(num);
+					break;
 			}
-			else
-			{
-				this.cantCartas = 48;
-				this.cantCartasPalo = 12;
-			}
-			this.palosEsp = new PalosEsp();
-			this.num = num;
+
 		}
 	}
-
 	class BarajaFra : Carta
 	{
-		PalosFra palosFra = new PalosFra();
-		public BarajaFra(int num) : base()
+		public bool Roja(BarajaFra c)
+		{
+			if (c.palo == "Diamantes" || c.palo == "Corazones")
+				return true;
+			else
+				return false;
+		}
+		public bool Negra(BarajaFra c)
+		{
+			if (c.palo == "Treboles" || c.palo == "Picas")
+				return true;
+			else
+				return false;
+		}
+		public BarajaFra(int i, string palo) : base()
 		{
 			this.cantCartas = 52;
-			this.cantCartasPalo = 13;
-			this.palosFra = new PalosFra();
-			this.num = num;
+			this.num = i;
+			this.palo = palo;
+			switch (num)
+			{
+				case 1:
+					this.fig = "As";
+					break;
+				case 10:
+					this.fig = "Jota";
+					break;
+				case 11:
+					this.fig = "Reina";
+					break;
+				case 12:
+					this.fig = "Rey";
+					break;
+				default:
+					this.fig = Convert.ToString(num);
+					break;
+			}
+
 		}
-	}*/
-	public enum PalosEsp { Espadas, Bastos, Copas, Oros }
-	public enum PalosFra { Picas, Treboles, Diamantes, Corazones }
-
-	abstract class Baraja
-	{
-		public int cantCartas;
-		public int cantCartasPalo;
-
-
 	}
 	internal class Program
 	{
@@ -71,20 +99,34 @@ namespace ejerciciosObligatorios17
 		{
 			Console.WriteLine("Elija un tipo de carta:\n1. Francesa\n2. Española");
 			int op = Convert.ToInt32(Console.ReadLine());
-			switch(op)
+			List<BarajaFra> barajaF = new List<BarajaFra>();
+			List<BarajaEsp> barajaE = new List<BarajaEsp>();
+			switch (op)
 			{
 				case 1:
-					//List<Carta> baraja = new List<Carta>();
-					BarajaFra baraja = new BarajaFra();
-					foreach (PalosEsp palo in baraja.)
-					{
-
-					}
+					foreach (string palo in Enum.GetNames(typeof(PalosFra)))
+						for (int i = 1; i <= 13; i++)
+							barajaF.Add(new BarajaFra(i, palo));
 					break;
 				case 2:
+					Console.WriteLine("Quiere incluir 8's y 9's?\n1. Si\n2. No");
+					bool o = (Convert.ToInt32(Console.ReadLine()) == 1);
+					foreach (string palo in Enum.GetNames(typeof(PalosEsp)))
+						for (int i = 1; i <= 12; i++)
+						{
+							if (!o && i == 8)
+								i += 2;
+							barajaE.Add(new BarajaEsp(i, palo));
+						}
 					break;
 			}
-			
+			if (!(barajaF.Count() <= 0))
+				foreach (BarajaFra carta in barajaF)
+					Console.WriteLine(carta.fig + "\t" + carta.palo);
+			if (!(barajaE.Count() <= 0))
+				foreach (BarajaEsp carta in barajaE)
+					Console.WriteLine(carta.fig + "\t" + carta.palo);
+			Console.ReadLine();
 		}
 	}
 }

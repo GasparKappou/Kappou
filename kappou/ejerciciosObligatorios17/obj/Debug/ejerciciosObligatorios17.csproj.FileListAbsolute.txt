@@ -1,0 +1,7 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\bin\Debug\ejerciciosObligatorios17.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\bin\Debug\ejerciciosObligatorios17.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\bin\Debug\ejerciciosObligatorios17.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\obj\Debug\ejerciciosObligatorios17.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\obj\Debug\ejerciciosObligatorios17.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\obj\Debug\ejerciciosObligatorios17.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\ejerciciosObligatorios17\obj\Debug\ejerciciosObligatorios17.pdb
