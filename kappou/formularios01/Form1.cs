@@ -93,5 +93,10 @@ namespace formularios01
                 boxDer.Items.Remove(boxDer.SelectedItem);
             }
         }
-    }
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
