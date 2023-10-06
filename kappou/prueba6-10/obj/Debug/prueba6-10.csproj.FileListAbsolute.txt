@@ -1,0 +1,11 @@
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\bin\Debug\prueba6-10.exe.config
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\bin\Debug\prueba6-10.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\bin\Debug\prueba6-10.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6_10.Form1.resources
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6_10.Properties.Resources.resources
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.exe
+C:\Users\Alumno\Desktop\Kappou\kappou\prueba6-10\obj\Debug\prueba6-10.pdb

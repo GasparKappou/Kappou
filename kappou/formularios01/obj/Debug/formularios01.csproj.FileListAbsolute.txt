@@ -8,3 +8,4 @@ C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.cspr
 C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.exe
 C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.pdb
+C:\Users\Alumno\Desktop\Kappou\kappou\formularios01\obj\Debug\formularios01.csproj.SuggestedBindingRedirects.cache
