@@ -18,8 +18,9 @@ namespace Project1
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
-            _graphics.PreferredBackBufferHeight = 720;
-            _graphics.PreferredBackBufferWidth = 1280;
+            _graphics.IsFullScreen = true;
+            _graphics.PreferredBackBufferHeight = 135;
+            _graphics.PreferredBackBufferWidth = 240;
         }
 
         protected override void Initialize()
@@ -44,13 +45,28 @@ namespace Project1
 
             KeyboardState keyboardState = Keyboard.GetState();
 
-            if (keyboardState.IsKeyDown(Keys.Space))
+            if (keyboardState.IsKeyDown(Keys.Down))
             {
-                // Implement jump logic here
+                float y = character.position.Y + 1;
+                character.position = new Vector2(character.position.X, y);
+            }
+            if(keyboardState.IsKeyDown(Keys.Up))
+            {
+                float y = character.position.Y - 1;
+                character.position = new Vector2(character.position.X, y);
+            }
+            if (keyboardState.IsKeyDown(Keys.Left))
+            {
+                float x = character.position.X - 1;
+                character.position = new Vector2(x, character.position.Y);
+            }
+            if (keyboardState.IsKeyDown(Keys.Right))
+            {
+                float x = character.position.X + 1;
+                character.position = new Vector2(x, character.position.Y);
             }
             // Update input, game objects, collision detection, etc.
             character.Update(gameTime);
-
 
             base.Update(gameTime);
         }
@@ -59,16 +75,12 @@ namespace Project1
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
             _spriteBatch.Begin();
 
             // Draw game objects
             character.Draw(_spriteBatch);
 
             _spriteBatch.End();
-
-            base.Draw(gameTime);
 
             base.Draw(gameTime);
         }

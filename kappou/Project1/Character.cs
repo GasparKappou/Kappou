@@ -11,7 +11,7 @@ namespace Project1
     class Character
     {
         private Texture2D texture;
-        private Vector2 position;
+        public Vector2 position;
         private Vector2 velocity;
         private float rotation;
 
