@@ -14,7 +14,7 @@ namespace Project1
         public Vector2 position;
         private Vector2 velocity;
         private float rotation;
-
+        public float gravedad = 3f;
         public Character(Texture2D texture, Vector2 position)
         {
             this.texture = texture;
@@ -22,7 +22,7 @@ namespace Project1
             this.velocity = Vector2.Zero;
             this.rotation = 0f;
         }
-
+        
         public void Update(GameTime gameTime)
         {
             // Implement bird movement and physics logic here
@@ -32,6 +32,10 @@ namespace Project1
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, position, null, Color.White, rotation, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+        }
+        public void Caer()
+        {
+            position.Y += gravedad;
         }
     }
 }

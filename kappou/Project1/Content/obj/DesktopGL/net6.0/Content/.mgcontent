@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/starChar.png</File>
+    <File>C:/Users/GASPAR/Desktop/Programacion 5°/Kappou/kappou/Project1/Content/platform.png</File>
+    <File>C:/Users/GASPAR/Desktop/Programacion 5°/Kappou/kappou/Project1/Content/starChar.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6LiESjiH4VIgW6F2FmcWISterRSbu+0ChX3b98ZaZcOEjzbQLz1BcqT4u2h7vACaeRszfTIZ86IWNB0PSsarZg==",
+  "dgSpecHash": "8etYm1OpgsCw6RH1lDT6us6o+SDcNyKQrgZyXkO2fQpY1T7K8YgqLXNMoh2CZ/B7/cE0Juxyu4hA+vqMUm7v0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alumno\\Desktop\\Kappou\\kappou\\Project1\\Project1.csproj",
+  "projectFilePath": "C:\\Users\\GASPAR\\Desktop\\Programacion 5°\\Kappou\\kappou\\Project1\\Project1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alumno\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\GASPAR\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\GASPAR\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }
