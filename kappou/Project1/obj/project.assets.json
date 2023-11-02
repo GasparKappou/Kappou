@@ -102,19 +102,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GASPAR\\.nuget\\packages\\": {}
+    "C:\\Users\\Alumno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GASPAR\\Desktop\\Programacion 5°\\Kappou\\kappou\\Project1\\Project1.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Kappou\\kappou\\Project1\\Project1.csproj",
       "projectName": "Project1",
-      "projectPath": "C:\\Users\\GASPAR\\Desktop\\Programacion 5°\\Kappou\\kappou\\Project1\\Project1.csproj",
-      "packagesPath": "C:\\Users\\GASPAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GASPAR\\Desktop\\Programacion 5°\\Kappou\\kappou\\Project1\\obj\\",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\Kappou\\kappou\\Project1\\Project1.csproj",
+      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alumno\\Desktop\\Kappou\\kappou\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GASPAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

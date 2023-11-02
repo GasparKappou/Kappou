@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection.PortableExecutable;
 
 namespace Project1
 {
@@ -15,6 +16,8 @@ namespace Project1
         private Vector2 velocity;
         private float rotation;
         public float gravedad = 3f;
+		public float velocidad = 2f;
+		public Rectangle characterRec;
         public Character(Texture2D texture, Vector2 position)
         {
             this.texture = texture;
@@ -25,14 +28,17 @@ namespace Project1
         
         public void Update(GameTime gameTime)
         {
-            // Implement bird movement and physics logic here
-            // Update position, velocity, rotation, etc.
-        }
+			// Implement bird movement and physics logic here
+			// Update position, velocity, rotation, etc.
+			characterRec = new Rectangle((int)position.X, (int)position.Y, 16, 16);
+		}
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, null, Color.White, rotation, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            spriteBatch.Draw(texture, position, new Rectangle(0, 0, texture.Width, texture.Height),
+                            Color.White, rotation, Vector2.Zero, 1f, SpriteEffects.None, 0f);
         }
+        Rectangle a = new Rectangle();
         public void Caer()
         {
             position.Y += gravedad;

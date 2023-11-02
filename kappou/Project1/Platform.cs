@@ -13,11 +13,13 @@ namespace Project1
     {
         private Texture2D texture;
         public Vector2 position;
+        public Rectangle rectangle;
 
-        public Platform(Texture2D texture, Vector2 position)
+        public Platform(Texture2D texture, Vector2 position, Rectangle rectangle)
         {
             this.texture = texture;
             this.position = position;
+            this.rectangle = rectangle;
         }
         public void Draw(SpriteBatch spriteBatch)
         {
