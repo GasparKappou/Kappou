@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection.PortableExecutable;
+using Microsoft.Xna.Framework.Input;
 
 namespace Project1
 {
@@ -28,8 +29,6 @@ namespace Project1
         
         public void Update(GameTime gameTime)
         {
-			// Implement bird movement and physics logic here
-			// Update position, velocity, rotation, etc.
 			characterRec = new Rectangle((int)position.X, (int)position.Y, 16, 16);
 		}
 
@@ -38,10 +37,23 @@ namespace Project1
             spriteBatch.Draw(texture, position, new Rectangle(0, 0, texture.Width, texture.Height),
                             Color.White, rotation, Vector2.Zero, 1f, SpriteEffects.None, 0f);
         }
-        Rectangle a = new Rectangle();
         public void Caer()
         {
             position.Y += gravedad;
+        }
+
+        public void Mover(KeyboardState k)
+        {
+            if (k.IsKeyDown(Keys.Up)) position.Y -= velocidad;
+            if (k.IsKeyDown(Keys.Down)) position.Y += velocidad;
+            if (k.IsKeyDown(Keys.Right)) position.X += velocidad;
+            if (k.IsKeyDown(Keys.Left)) position.X -= velocidad;
+        }
+        public void MantenerDentro(GraphicsDeviceManager graphics)
+        {
+            if (position.X > graphics.PreferredBackBufferWidth) position.X = 0;
+            else if (position.X < 0) position.X = graphics.PreferredBackBufferWidth;
+            else if (position.Y > graphics.PreferredBackBufferHeight) position.Y = 0;
         }
     }
 }
