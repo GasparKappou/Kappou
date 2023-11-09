@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Project1
 {
@@ -19,9 +20,10 @@ namespace Project1
 		static Texture2D texture;
         public Rectangle r;
         public Random rnd = new Random();
-        public int resX = 1920;
-        public int resY = 1080;
-
+        public int resX = 800;
+        public int resY = 600;
+        public int dif = 1;
+        
         Character character;
         List<Platform> plataformas = new List<Platform> { };
         public Game1()
@@ -30,8 +32,8 @@ namespace Project1
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             _graphics.IsFullScreen = true;
-            _graphics.PreferredBackBufferHeight = resY;
-            _graphics.PreferredBackBufferWidth = resX;
+			_graphics.PreferredBackBufferWidth = resX;
+			_graphics.PreferredBackBufferHeight = resY;
         }
 
         protected override void Initialize()
@@ -45,13 +47,10 @@ namespace Project1
             star = Content.Load<Texture2D>("starChar");
             character = new Character(star, new Vector2((_graphics.PreferredBackBufferWidth - star.Width) / 2,
                                                         (_graphics.PreferredBackBufferHeight - star.Height) / 2));
-
+			
             texture = Content.Load<Texture2D>("platform");
-            for (int i = 0; i < 75; i++) 
-            {
-                r = new Rectangle(rnd.Next(0, resX), rnd.Next(800, 1000), texture.Width, texture.Height);
-                plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
-            }
+            NuevasPlataformas(dif);
+            plataformas.Add(new Platform(texture, new Vector2(character.position.X, character.position.Y + 150), new Rectangle((int)character.position.X, (int)character.position.Y + 150, texture.Width, 3)));
         }
         protected override void Update(GameTime gameTime)
         {
@@ -59,7 +58,12 @@ namespace Project1
                         
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            if (character.position.Y > resY)
+                NuevasPlataformas(dif);
+
             character.MantenerDentro(_graphics);
+
             character.Caer();
 
             foreach(Platform p in plataformas)
@@ -77,13 +81,25 @@ namespace Project1
             GraphicsDevice.Clear(Color.Gray);
 
             _spriteBatch.Begin();
-            
+
             character.Draw(_spriteBatch);
             foreach (Platform platform in plataformas)
-				platform.Draw(_spriteBatch);
+                platform.Draw(_spriteBatch);
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
         }
+        public void NuevasPlataformas(int dif)
+        {
+            if (!(plataformas.Count <= 0))
+			    plataformas.Clear();
+            for (int i = 0; i < dif*14; i++)
+			{
+				r = new Rectangle(rnd.Next(0, resX-17), rnd.Next(resY - (resY / 3), resY), texture.Width, 3);
+				plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
+			}
+            this.dif += 1; 
+		}
     }
 }
