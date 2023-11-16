@@ -20,8 +20,8 @@ namespace Project1
 		static Texture2D texture;
         public Rectangle r;
         public Random rnd = new Random();
-        public int resX = 800;
-        public int resY = 600;
+        public int resX = 1920;
+        public int resY = 1080;
         public int dif = 1;
         
         Character character;
@@ -50,7 +50,8 @@ namespace Project1
 			
             texture = Content.Load<Texture2D>("platform");
             NuevasPlataformas(dif);
-            plataformas.Add(new Platform(texture, new Vector2(character.position.X, character.position.Y + 150), new Rectangle((int)character.position.X, (int)character.position.Y + 150, texture.Width, 3)));
+            plataformas.Add(new Platform(texture, new Vector2(character.position.X, character.position.Y + 150),
+                            new Rectangle((int)character.position.X, (int)character.position.Y + 150, texture.Width, 3)));
         }
         protected override void Update(GameTime gameTime)
         {
