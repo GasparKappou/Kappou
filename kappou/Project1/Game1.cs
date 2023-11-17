@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Net.Mime;
 using System.Threading;
-using System;
+using System; //gaspar te amo
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +20,8 @@ namespace Project1
 		static Texture2D texture;
         public Rectangle r;
         public Random rnd = new Random();
-        public int resX = 1920;
-        public int resY = 1080;
+        public int resX = 800;
+        public int resY = 600;
         public int dif = 1;
         
         Character character;
