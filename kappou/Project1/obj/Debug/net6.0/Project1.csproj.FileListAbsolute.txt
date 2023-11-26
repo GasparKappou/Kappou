@@ -80,3 +80,4 @@ C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\obj\Debug\ne
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\obj\Debug\net6.0\Project1.pdb
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\obj\Debug\net6.0\Project1.genruntimeconfig.cache
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\obj\Debug\net6.0\ref\Project1.dll
+C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\monocraft.xnb

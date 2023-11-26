@@ -23,9 +23,13 @@ namespace Project1
         public int resX = 800;
         public int resY = 600;
         public int dif = 1;
-        
+        public SpriteFont fuente;
+        public int contador;
         Character character;
         List<Platform> plataformas = new List<Platform> { };
+        public double timer = 0;
+        public int anchoLetra = 18;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -45,18 +49,28 @@ namespace Project1
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             star = Content.Load<Texture2D>("starChar");
-            character = new Character(star, new Vector2((_graphics.PreferredBackBufferWidth - star.Width) / 2,
-                                                        (_graphics.PreferredBackBufferHeight - star.Height) / 2));
+            character = new Character(star, new Vector2((resX - star.Width) / 2, (resY - star.Height) / 2));
 			
             texture = Content.Load<Texture2D>("platform");
-            NuevasPlataformas(dif);
+
             plataformas.Add(new Platform(texture, new Vector2(character.position.X, character.position.Y + 150),
                             new Rectangle((int)character.position.X, (int)character.position.Y + 150, texture.Width, 3)));
+            fuente = Content.Load<SpriteFont>("monocraft");
         }
         protected override void Update(GameTime gameTime)
         {
+            timer += 0.016;
             KeyboardState keyboardState = Keyboard.GetState();
-                        
+
+            if ((int)timer == 1)
+            {
+                timer = 0;
+                if (!keyboardState.IsKeyDown(Keys.Up) && dif != 1)
+                    contador++;
+                if (keyboardState.IsKeyDown(Keys.Down) && dif != 1)
+                    contador++;
+            }
+
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
@@ -65,11 +79,18 @@ namespace Project1
 
             character.MantenerDentro(_graphics);
 
+            if (character.position.Y == 0)
+                contador += 10;
+
             character.Caer();
 
             foreach(Platform p in plataformas)
                 if (character.characterRec.Intersects(p.rectangle))
+                {
                     character.position.Y -= 100f;
+                    if (contador > 0)
+                        contador--;
+                }
 
             character.Mover(keyboardState);
 
@@ -86,6 +107,10 @@ namespace Project1
             character.Draw(_spriteBatch);
             foreach (Platform platform in plataformas)
                 platform.Draw(_spriteBatch);
+            _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
+            _spriteBatch.DrawString(fuente, Convert.ToString(dif), new Vector2(8 * anchoLetra, 0), Color.Black);
+            _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
+            _spriteBatch.DrawString(fuente, Convert.ToString(contador), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
 
             _spriteBatch.End();
 
