@@ -16,8 +16,8 @@ namespace Project1
     {
         private static GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-		static Texture2D star;
-		static Texture2D texture;
+        static Texture2D star;
+        static Texture2D texture;
         public Rectangle r;
         public Random rnd = new Random();
         public int resX = 800;
@@ -29,6 +29,9 @@ namespace Project1
         List<Platform> plataformas = new List<Platform> { };
         public double timer = 0;
         public int anchoLetra = 18;
+        public bool juego = false;
+        public int alturaCursor = 0;
+        public bool estado = false;
 
         public Game1()
         {
@@ -59,43 +62,65 @@ namespace Project1
         }
         protected override void Update(GameTime gameTime)
         {
-            timer += 0.016;
             KeyboardState keyboardState = Keyboard.GetState();
-
-            if ((int)timer == 1)
+            
+           
+            if (juego == false)
             {
-                timer = 0;
-                if (!keyboardState.IsKeyDown(Keys.Up) && dif != 1)
-                    contador++;
-                if (keyboardState.IsKeyDown(Keys.Down) && dif != 1)
-                    contador++;
-            }
-
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
-            if (character.position.Y > resY)
-                NuevasPlataformas(dif);
-
-            character.MantenerDentro(_graphics);
-
-            if (character.position.Y == 0)
-                contador += 10;
-
-            character.Caer();
-
-            foreach(Platform p in plataformas)
-                if (character.characterRec.Intersects(p.rectangle))
+                if (keyboardState.IsKeyDown(Keys.Up) && estado == true)
                 {
-                    character.position.Y -= 100f;
-                    if (contador > 0)
-                        contador--;
+                    alturaCursor -= 2;
+                    estado = false;
+                }
+                if (keyboardState.IsKeyDown(Keys.Down) && estado == false)
+                {
+                    alturaCursor += 2;
+                    estado = true;
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.Enter) && alturaCursor == 2)
+                    Exit();
+                if (Keyboard.GetState().IsKeyDown(Keys.Enter) && alturaCursor == 0)
+                    juego = !juego;
+                base.Update(gameTime);
+            }
+            else
+            {
+                timer += 0.016;
+                if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+                    juego = !juego;
+                if ((int)timer == 1)
+                {
+                    timer = 0;
+                    if (!keyboardState.IsKeyDown(Keys.Up) && dif != 1)
+                        contador++;
+                    if (keyboardState.IsKeyDown(Keys.Down) && dif != 1)
+                        contador++;
                 }
 
-            character.Mover(keyboardState);
+                
 
-			character.Update(gameTime);
+                if (character.position.Y > resY)
+                    NuevasPlataformas(dif);
 
+                character.MantenerDentro(_graphics);
+
+                if (character.position.Y == 0)
+                    contador += 10;
+
+                character.Caer();
+
+                foreach (Platform p in plataformas)
+                    if (character.characterRec.Intersects(p.rectangle))
+                    {
+                        character.position.Y -= 100f;
+                        if (contador > 0)
+                            contador--;
+                    }
+
+                character.Mover(keyboardState);
+
+                character.Update(gameTime);
+            }
             base.Update(gameTime);
         }
         protected override void Draw(GameTime gameTime)
@@ -104,14 +129,25 @@ namespace Project1
 
             _spriteBatch.Begin();
 
-            character.Draw(_spriteBatch);
-            foreach (Platform platform in plataformas)
-                platform.Draw(_spriteBatch);
-            _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
-            _spriteBatch.DrawString(fuente, Convert.ToString(dif), new Vector2(8 * anchoLetra, 0), Color.Black);
-            _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
-            _spriteBatch.DrawString(fuente, Convert.ToString(contador), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
-
+            if (juego == false)
+            {
+                Texture2D vacia;
+                vacia = Content.Load<Texture2D>("blanco");
+                r = new Rectangle(anchoLetra-3, 6 + anchoLetra * alturaCursor, anchoLetra*6, anchoLetra*2);
+                _spriteBatch.Draw(vacia, r, Color.White);
+                _spriteBatch.DrawString(fuente, "Jugar", new Vector2(anchoLetra, 0), Color.Black);
+                _spriteBatch.DrawString(fuente, "Salir", new Vector2(anchoLetra, anchoLetra* 2), Color.Black);
+            }
+            else
+            {
+                character.Draw(_spriteBatch);
+                foreach (Platform platform in plataformas)
+                    platform.Draw(_spriteBatch);
+                _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
+                _spriteBatch.DrawString(fuente, Convert.ToString(dif), new Vector2(8 * anchoLetra, 0), Color.Black);
+                _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
+                _spriteBatch.DrawString(fuente, Convert.ToString(contador), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
+            }
             _spriteBatch.End();
 
             base.Draw(gameTime);

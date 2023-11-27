@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/monocraft.spritefont","C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/monocraft.xnb","FontDescriptionProcessor","SpriteFontContent",2072,70687,0,2255178
-"C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/platform.png","C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/platform.xnb","TextureProcessor","Texture2DContent",133,1109,0,0303548
-"C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/starChar.png","C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/starChar.xnb","TextureProcessor","Texture2DContent",225,1109,0,0025051
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/blanco.jpg","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/blanco.xnb","TextureProcessor","Texture2DContent",18271,11182165,0,3916934
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/monocraft.spritefont","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/monocraft.xnb","FontDescriptionProcessor","SpriteFontContent",2072,70687,0,0811098
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/platform.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/platform.xnb","TextureProcessor","Texture2DContent",133,1109,0,0012197
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/starChar.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/starChar.xnb","TextureProcessor","Texture2DContent",225,1109,0,0015577
