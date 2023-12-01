@@ -4,12 +4,14 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/blanco.jpg</File>
-    <File>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/monocraft.spritefont</File>
-    <File>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/platform.png</File>
-    <File>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/starChar.png</File>
+    <File>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/blanco.jpg</File>
+    <File>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/monocraft.spritefont</File>
+    <File>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/platform.png</File>
+    <File>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/starChar.png</File>
+    <File>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/starChar2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

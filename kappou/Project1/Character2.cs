@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Project1
 {
-    class Character
+    class Character2
     {
         private Texture2D texture;
         public Vector2 position;
@@ -19,7 +19,9 @@ namespace Project1
         public float gravedad = 3f;
 		public float velocidad = 2f;
 		public Rectangle characterRec;
-        public Character(Texture2D texture, Vector2 position)
+        public int score;
+        public int dif = 1;
+        public Character2(Texture2D texture, Vector2 position)
         {
             this.texture = texture;
             this.position = position;

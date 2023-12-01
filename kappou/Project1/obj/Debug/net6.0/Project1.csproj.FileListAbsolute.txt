@@ -83,3 +83,5 @@ C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\obj\Debug\ne
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\monocraft.xnb
 C:\Users\Alumno\Desktop\Kappou\kappou\Project1\bin\Debug\net6.0\Content\monocraft.xnb
 C:\Users\Alumno\Desktop\Kappou\kappou\Project1\bin\Debug\net6.0\Content\blanco.xnb
+C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\blanco.xnb
+C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\starChar2.xnb
