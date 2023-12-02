@@ -18,7 +18,9 @@ namespace Project1
         private SpriteBatch _spriteBatch;
         static Texture2D star1;
         static Texture2D star2;
-        static Texture2D texture;
+        static Texture2D plataforma;
+        static Texture2D plataforma1;
+        static Texture2D plataforma2;
         public Rectangle r;
         public Random rnd = new Random();
         public int resX = 800;
@@ -26,7 +28,6 @@ namespace Project1
         public SpriteFont fuente;
         Character1 character1;
         Character2 character2;
-        List<Platform> plataformas = new List<Platform> { };
         public double timer = 0;
         public int anchoLetra = 18;
         public bool juego = false;
@@ -53,13 +54,25 @@ namespace Project1
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             star1 = Content.Load<Texture2D>("starChar");
             star2 = Content.Load<Texture2D>("starChar2");
-            character1 = new Character1(star1, new Vector2((resX - star1.Width) / 2, (resY - star1.Height) / 2));
-            character2 = new Character2(star2, new Vector2((resX - star2.Width) / 2, (resY - star2.Height) / 2));
+            character1 = new Character1(star1, new Vector2((resX - star1.Width) / 2 - 8, (resY - star1.Height) / 2));
+            character2 = new Character2(star2, new Vector2((resX - star2.Width) / 2 + 8, (resY - star2.Height) / 2));
 
-            texture = Content.Load<Texture2D>("platform");
+            plataforma = Content.Load<Texture2D>("platform");
+            plataforma1 = Content.Load<Texture2D>("platform1");
+            plataforma2 = Content.Load<Texture2D>("platform2");
+            if (cantJugadores == 2)
+            {
+                character1.plataformas.Add(new Platform(plataforma1, new Vector2(character1.position.X, character1.position.Y + 150),
+                            new Rectangle((int)character1.position.X, (int)character1.position.Y + 150, plataforma1.Width, 3)));
+            }
+            else if (cantJugadores == 1)
+            {
+                character1.plataformas.Add(new Platform(plataforma, new Vector2(character1.position.X, character1.position.Y + 150),
+                            new Rectangle((int)character1.position.X, (int)character1.position.Y + 150, plataforma.Width, 3)));
+            }
+            character2.plataformas.Add(new Platform(plataforma2, new Vector2(character2.position.X, character2.position.Y + 150),
+                            new Rectangle((int)character2.position.X, (int)character2.position.Y + 150, plataforma2.Width, 3)));
 
-            plataformas.Add(new Platform(texture, new Vector2(character1.position.X, character1.position.Y + 150),
-                            new Rectangle((int)character1.position.X, (int)character1.position.Y + 150, texture.Width, 3)));
             fuente = Content.Load<SpriteFont>("monocraft");
         }
         protected override void Update(GameTime gameTime)
@@ -79,11 +92,14 @@ namespace Project1
                     alturaCursor += 2;
                     estado = true;
                 }
-                if (keyboardState.)
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter) && alturaCursor == 2)
                     Exit();
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter) && alturaCursor == 0)
                     juego = !juego;
+                if (Keyboard.GetState().IsKeyDown(Keys.Add) && cantJugadores == 1)
+                    cantJugadores = 2;
+                if (Keyboard.GetState().IsKeyDown(Keys.OemMinus) && cantJugadores == 2)
+                    cantJugadores = 1;
                 base.Update(gameTime);
             }
             else
@@ -106,7 +122,7 @@ namespace Project1
                 if (cantJugadores == 1)
                 {
                     if (character1.position.Y > resY)
-                        NuevasPlataformas(character1.dif);
+                        character1.NuevasPlataformas(character1.dif, rnd, resX, resY, r, cantJugadores, plataforma);
 
                     character1.MantenerDentro(_graphics);
 
@@ -115,7 +131,7 @@ namespace Project1
 
                     character1.Caer();
 
-                    foreach (Platform p in plataformas)
+                    foreach (Platform p in character1.plataformas)
                         if (character1.characterRec.Intersects(p.rectangle))
                         {
                             character1.position.Y -= 100f;
@@ -129,7 +145,7 @@ namespace Project1
                 else
                 {
                     if (character1.position.Y > resY)
-                        NuevasPlataformas1(character1.dif);
+                        character1.NuevasPlataformas(character1.dif, rnd, resX, resY, r, cantJugadores, plataforma1);
 
                     character1.MantenerDentro(_graphics);
 
@@ -138,7 +154,7 @@ namespace Project1
 
                     character1.Caer();
 
-                    foreach (Platform p in plataformas)
+                    foreach (Platform p in character1.plataformas)
                         if (character1.characterRec.Intersects(p.rectangle))
                         {
                             character1.position.Y -= 100f;
@@ -149,7 +165,7 @@ namespace Project1
                     character1.Mover(keyboardState);
 
                     if (character2.position.Y > resY)
-                        NuevasPlataformas2(character2.dif);
+                        character2.NuevasPlataformas(character2.dif, rnd, resX, resY, r, plataforma2);
 
                     character2.MantenerDentro(_graphics);
 
@@ -158,7 +174,7 @@ namespace Project1
 
                     character2.Caer();
 
-                    foreach (Platform p in plataformas)
+                    foreach (Platform p in character2.plataformas)
                         if (character2.characterRec.Intersects(p.rectangle))
                         {
                             character2.position.Y -= 100f;
@@ -178,20 +194,23 @@ namespace Project1
             GraphicsDevice.Clear(Color.Gray);
 
             _spriteBatch.Begin();
-
+            Texture2D selector;
+            selector = Content.Load<Texture2D>("blanco");
             if (juego == false)
             {
-                Texture2D selector;
                 selector = Content.Load<Texture2D>("blanco");
                 r = new Rectangle(anchoLetra - 3, 6 + anchoLetra * alturaCursor, anchoLetra * 6, anchoLetra * 2);
                 _spriteBatch.Draw(selector, r, Color.White);
                 _spriteBatch.DrawString(fuente, "Jugar", new Vector2(anchoLetra, 0), Color.Black);
                 _spriteBatch.DrawString(fuente, "Salir", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
+                _spriteBatch.DrawString(fuente, "Cantidad de jugadores", new Vector2(anchoLetra, anchoLetra * 4), Color.Black);
+                _spriteBatch.DrawString(fuente, Convert.ToString(cantJugadores), new Vector2(anchoLetra, anchoLetra * 6), Color.Black);
+                _spriteBatch.DrawString(fuente, "'+' para agregarr '-' para restar", new Vector2(anchoLetra, anchoLetra * 8), Color.Black);
             }
             else if (cantJugadores == 1)
             {
                 character1.Draw(_spriteBatch);
-                foreach (Platform platform in plataformas)
+                foreach (Platform platform in character1.plataformas)
                     platform.Draw(_spriteBatch);
                 _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
                 _spriteBatch.DrawString(fuente, Convert.ToString(character1.dif), new Vector2(8 * anchoLetra, 0), Color.Black);
@@ -201,7 +220,7 @@ namespace Project1
             else
             {
                 character1.Draw(_spriteBatch);
-                foreach (Platform platform in plataformas)
+                foreach (Platform platform in character1.plataformas)
                     platform.Draw(_spriteBatch);
                 _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
                 _spriteBatch.DrawString(fuente, Convert.ToString(character1.dif), new Vector2(8 * anchoLetra, 0), Color.Black);
@@ -209,49 +228,16 @@ namespace Project1
                 _spriteBatch.DrawString(fuente, Convert.ToString(character1.score), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
 
                 character2.Draw(_spriteBatch);
-                foreach (Platform platform in plataformas)
+                foreach (Platform platform in character2.plataformas)
                     platform.Draw(_spriteBatch);
-                _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra * 22, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character2.dif), new Vector2(29 * anchoLetra, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra * 22, anchoLetra * 2), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character2.score), new Vector2(29 * anchoLetra, anchoLetra * 2), Color.Black);
+                _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra * 23, 0), Color.Black);
+                _spriteBatch.DrawString(fuente, Convert.ToString(character2.dif), new Vector2(30 * anchoLetra, 0), Color.Black);
+                _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra * 23, anchoLetra * 2), Color.Black);
+                _spriteBatch.DrawString(fuente, Convert.ToString(character2.score), new Vector2(30 * anchoLetra, anchoLetra * 2), Color.Black);
             }
             _spriteBatch.End();
 
             base.Draw(gameTime);
-        }
-        public void NuevasPlataformas(int dif)
-        {
-            if (!(plataformas.Count <= 0))
-                plataformas.Clear();
-            for (int i = 0; i < dif * 14; i++)
-            {
-                r = new Rectangle(rnd.Next(0, resX - 17), rnd.Next(resY - (resY / 3), resY), texture.Width, 3);
-                plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
-            }
-            character1.dif += 1;
-        }
-        public void NuevasPlataformas1(int dif)
-        {
-            if (!(plataformas.Count <= 0))
-                plataformas.Clear();
-            for (int i = 0; i < dif * 5; i++)
-            {
-                r = new Rectangle(rnd.Next(0, resX - 17), rnd.Next(resY - (resY / 3), resY), texture.Width, 3);
-                plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
-            }
-            character1.dif += 1;
-        }
-        public void NuevasPlataformas2(int dif)
-        {
-            if (!(plataformas.Count <= 0))
-                plataformas.Clear();
-            for (int i = 0; i < dif * 5; i++)
-            {
-                r = new Rectangle(rnd.Next(0, resX - 17), rnd.Next(resY - (resY / 3), resY), texture.Width, 3);
-                plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
-            }
-            character2.dif += 1;
         }
     }
 }

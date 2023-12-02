@@ -21,6 +21,7 @@ namespace Project1
 		public Rectangle characterRec;
         public int score;
         public int dif = 1;
+        public List<Platform> plataformas = new List<Platform> { };
         public Character2(Texture2D texture, Vector2 position)
         {
             this.texture = texture;
@@ -56,6 +57,17 @@ namespace Project1
             if (position.X > graphics.PreferredBackBufferWidth) position.X = 0;
             else if (position.X < 0) position.X = graphics.PreferredBackBufferWidth;
             else if (position.Y > graphics.PreferredBackBufferHeight) position.Y = 0;
+        }
+        public void NuevasPlataformas(int dif, Random rnd, int resX, int resY, Rectangle r, Texture2D texture)
+        {
+            if (!(plataformas.Count <= 0))
+                plataformas.Clear();
+            for (int i = 0; i < dif * 6; i++)
+            {
+                r = new Rectangle(rnd.Next(0, resX - 16), rnd.Next(resY - (resY / 3), resY), texture.Width, 3);
+                plataformas.Add(new Platform(texture, new Vector2(r.X, r.Y), r));
+            }
+            this.dif += 1;
         }
     }
 }

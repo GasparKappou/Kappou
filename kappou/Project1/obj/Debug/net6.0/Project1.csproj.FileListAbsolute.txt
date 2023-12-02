@@ -85,3 +85,5 @@ C:\Users\Alumno\Desktop\Kappou\kappou\Project1\bin\Debug\net6.0\Content\monocraf
 C:\Users\Alumno\Desktop\Kappou\kappou\Project1\bin\Debug\net6.0\Content\blanco.xnb
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\blanco.xnb
 C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\starChar2.xnb
+C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\platform1.xnb
+C:\Users\GAS\Desktop\Escritorio\Programacion\Kappou\kappou\Project1\bin\Debug\net6.0\Content\platform2.xnb
