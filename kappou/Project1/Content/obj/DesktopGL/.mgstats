@@ -1,3 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/platform1.png","C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/platform1.xnb","TextureProcessor","Texture2DContent",164,1109,0,1405404
-"C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/platform2.png","C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/platform2.xnb","TextureProcessor","Texture2DContent",160,1109,0,0019179
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/blanco.jpg","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/blanco.xnb","TextureProcessor","Texture2DContent",18271,11182165,0,3041939
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/monocraft.spritefont","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/monocraft.xnb","FontDescriptionProcessor","SpriteFontContent",2072,70687,0,1226685
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/platform.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/platform.xnb","TextureProcessor","Texture2DContent",133,1109,0,0017516
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/platform1.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/platform1.xnb","TextureProcessor","Texture2DContent",164,1109,0,002158
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/platform2.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/platform2.xnb","TextureProcessor","Texture2DContent",160,1109,0,0018364
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/starChar.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/starChar.xnb","TextureProcessor","Texture2DContent",225,1109,0,0012313
+"C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/starChar2.png","C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/starChar2.xnb","TextureProcessor","Texture2DContent",204,1109,0,0012066

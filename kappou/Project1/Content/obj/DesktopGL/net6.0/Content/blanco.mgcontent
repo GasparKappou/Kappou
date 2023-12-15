@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/blanco.jpg</SourceFile>
-  <SourceTime>2023-12-01T16:54:25.1688347-03:00</SourceTime>
-  <DestFile>C:/Users/GAS/Desktop/Escritorio/Programacion/Kappou/kappou/Project1/Content/bin/DesktopGL/Content/blanco.xnb</DestFile>
-  <DestTime>2023-12-01T17:20:56.217104-03:00</DestTime>
+  <SourceFile>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/blanco.jpg</SourceFile>
+  <SourceTime>2023-12-15T14:36:27.5925195-03:00</SourceTime>
+  <DestFile>C:/Users/Alumno/Desktop/Kappou/kappou/Project1/Content/bin/DesktopGL/Content/blanco.xnb</DestFile>
+  <DestTime>2023-12-15T14:40:23.0885147-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

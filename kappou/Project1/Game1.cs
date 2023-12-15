@@ -199,7 +199,7 @@ namespace Project1
             if (juego == false)
             {
                 selector = Content.Load<Texture2D>("blanco");
-                r = new Rectangle(anchoLetra - 3, 6 + anchoLetra * alturaCursor, anchoLetra * 6, anchoLetra * 2);
+                r = new Rectangle(anchoLetra - 3, 6 + anchoLetra * alturaCursor - 6, anchoLetra * 6, anchoLetra * 2);
                 _spriteBatch.Draw(selector, r, Color.White);
                 _spriteBatch.DrawString(fuente, "Jugar", new Vector2(anchoLetra, 0), Color.Black);
                 _spriteBatch.DrawString(fuente, "Salir", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
@@ -219,21 +219,44 @@ namespace Project1
             }
             else
             {
-                character1.Draw(_spriteBatch);
-                foreach (Platform platform in character1.plataformas)
-                    platform.Draw(_spriteBatch);
-                _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character1.dif), new Vector2(8 * anchoLetra, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character1.score), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
+                if (character2.score <
+                    character1.score)
+                {
+                    character1.Draw(_spriteBatch);
+                    foreach (Platform platform in character1.plataformas)
+                        platform.Draw(_spriteBatch);
+                    _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character1.dif), new Vector2(8 * anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character1.score), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
 
-                character2.Draw(_spriteBatch);
-                foreach (Platform platform in character2.plataformas)
-                    platform.Draw(_spriteBatch);
-                _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra * 23, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character2.dif), new Vector2(30 * anchoLetra, 0), Color.Black);
-                _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra * 23, anchoLetra * 2), Color.Black);
-                _spriteBatch.DrawString(fuente, Convert.ToString(character2.score), new Vector2(30 * anchoLetra, anchoLetra * 2), Color.Black);
+                    character2.Draw(_spriteBatch);
+                    foreach (Platform platform in character2.plataformas)
+                        platform.Draw(_spriteBatch);
+                    _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra * 23, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character2.dif), new Vector2(30 * anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra * 23, anchoLetra * 2), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character2.score), new Vector2(30 * anchoLetra, anchoLetra * 2), Color.Black);
+                }
+                else
+                {
+                    character2.Draw(_spriteBatch);
+                    foreach (Platform platform in character2.plataformas)
+                        platform.Draw(_spriteBatch);
+                    _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra * 23, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character2.dif), new Vector2(30 * anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra * 23, anchoLetra * 2), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character2.score), new Vector2(30 * anchoLetra, anchoLetra * 2), Color.Black);
+
+                    character1.Draw(_spriteBatch);
+                    foreach (Platform platform in character1.plataformas)
+                        platform.Draw(_spriteBatch);
+                    _spriteBatch.DrawString(fuente, "Level:", new Vector2(anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character1.dif), new Vector2(8 * anchoLetra, 0), Color.Black);
+                    _spriteBatch.DrawString(fuente, "Score:", new Vector2(anchoLetra, anchoLetra * 2), Color.Black);
+                    _spriteBatch.DrawString(fuente, Convert.ToString(character1.score), new Vector2(8 * anchoLetra, anchoLetra * 2), Color.Black);
+
+                }
             }
             _spriteBatch.End();
 
