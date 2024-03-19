@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AJAX con jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#cargarDatos").click(function () {
+        $.ajax({
+          url: "datos.php",
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+            // Limpiar el contenido anterior
+            $("#listaDatos").empty();
+            // Iterar sobre los datos y agregarlos a la lista
+            $.each(data, function (index, value) {
+              $("#listaDatos").append("<li>" + value + "</li>");
+            });
+          },
+          error: function (xhr, status, error) {
+            // Mostrar el mensaje de error
+            $("#listaDatos").html(
+              "<li>Error al cargar los datos: " + xhr.statusText + "</li>"
+            );
+          },
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <button id="cargarDatos">Cargar Datos</button>
+
+  <div>
+    <ul id="listaDatos"></ul>
+  </div>
+</body>
+
+</html>
